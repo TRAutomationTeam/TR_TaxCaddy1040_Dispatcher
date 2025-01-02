@@ -1,0 +1,244 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TC1041_Change" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1498,819" sap2010:WorkflowViewState.IdRef="_1041_Change_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_1041_Change" sap:VirtualizedContainerService.HintSize="546,495" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: John Flint - TaxCaddy CPA" sap:VirtualizedContainerService.HintSize="484,384" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="31852679-a839-4d05-810e-cb8d3db218f1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,167" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="bool_MoreAction" />
+              <Variable x:TypeArguments="x:Boolean" Name="bool_AddForm" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="RetryScope_3" NumberOfRetries="5" RetryInterval="00:00:02">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,360" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:00:02">
+                      <ui:RetryScope.ActivityBody>
+                        <ActivityAction>
+                          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,299" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="" ClickType="Single" DisplayName="Click 'MORE ACTIONS'" sap:VirtualizedContainerService.HintSize="388,188" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee79a5e9-e7ea-48f6-adb9-cd8345a3b134" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://cpa.taxcaddy.com/#/cpa/offlineclient/876161/2022/tax-documents/uploaded" DesignTimeRectangle="1123, 276, 73, 17" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'MORE ACTIONS'" FullSelectorArgument="&lt;webctrl aaname='MORE ACTIONS' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='MORE ACTIONS' parentid='test-clientDetails' tag='SPAN' type='' class='_3ZZ-w' check:innerText='MORE ACTIONS' /&gt;" Guid="ee66f6fa-a0b0-4bff-a052-a886ccd0e898" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAVCAYAAAAD1GMqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHqSURBVFhH7ZQ9jsIwEIX3LrlYKm5BRb0lPSUF0jZItDkBSFwCiUt4x/NjP/8QwPU8ySKeZGbefE74Ca6v5dAG5NAG5NAG5NAG5NAGBNAe4bQ9hGlzCPPloTHS7cyxabuEp4ael6PEdKXnH0uYIT5tjuGkt657jFc9TJ1eonvYQe60+Qu/6rVY+7v0wfzaE9xLnijPxDHd13PubhzuQ+sW1pgVsqGLvRqU4lpP85phOhLDZwZkBjOwc7jaPg2pPeqhrY8Be7FPs9WHy/Wkb55z0f4daDOZntEgFdztCQw3KkGIIFZA02F1oPfQ5PmYm42T9O3LEFHr0ORAM5AojEmfpZiphtbz3EK73PmXTUbDlHSNjTi5BGFKRj/5FHQ1EBiOHhZc9wbPWocmPe0FUHFthEa5cNgplp6NNSBGaj9PuslG6TcWiK8n79kIvFWalfIAWmwuw2bDOEwrrWEGdaWDs+tG69B6wDGGz/I1+T3p7IUqD11o+c9Timdo1hS/ddiPfp5FXhTC0Dp4APT/InXWodX/YfW+9GR9aBkDq1v560Ozay2I0KIMlC0D2AyvJxTvy0l2ckhSr/dGKCgb1lby8gZa1Mvc9tk0l0HDPOgB0FyfyqENyKENyKENyKENyKENyKENyKF9rRD+ATplfOGi0Q7JAAAAAElFTkSuQmCC" InformativeScreenshot="321264b8b9af5e2a5d56fddfe6bd95ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- TaxCaddy CPA' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                      <uix:Target DesignTimeRectangle="1117, 270, 109, 29" ElementType="Button" FriendlyName="'MORE ACTIONS'" FullSelectorArgument="&lt;webctrl aaname='MORE ACTIONS' parentid='test-clientDetails' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='MORE ACTIONS' parentid='test-clientDetails' tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root jss51 MuiButton-text MuiButton-textSecondary' check:innerText='MORE ACTIONS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHEAAAAhCAYAAADu8EQnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMTSURBVGhD7Ze/jhMxEMZ5lzwAvAA8AQ+RKu21UFxDaiQo0tOATiIS0hEpElW6o0pQJCQooQk6iYKCgsr4s2e8Y6+z8e6RHGfNJ42y9npsz/z8Z3PPqO68FGIFUogVSCFWIIVYgRRiBVKIFUgh3oI+f/9pPn794QzPN5VCPJF+/f5jXr7/ZB6cvTGjyavIHj2du3doM0QK8QTCbsvBSw1thuxMhXhkAUoOWJf1BakQjygcjyU7MDX49DlaCyDuzPzcdz5e7qjOarPwg56vzDVVXS8vosmE9ruVGYv60eTCzOnVeibrkzFYmbG8tmYqfEeTd+Y5zTWy2daPI/3TOYl3YU7Wj+XqqJzGOd246pZeXG6idn0MvqXqBTEbKNVxYAwhKlPCfLDUH/m1kpuRT+DCAWsSxgAXZs3lkHQaI4XA4zDAPeUQW7rYXH9+3CbOFY3f1v2z19RPf8PHTqmKIY5tEscyYTbA6cyCcoHHYLxEXQSRkk8JPgzRt4dvk0gr2p35XdAN0S+wBhAk6/w4qyimFGL3nPN3IY7JD5tv5urLLjLU5Y7d0ruxHOJy635d0pBAG8QagbtgYjCskLiSo4usBcXBosUjnnMgGnVD9GPygiS5viVE6ysWX6gLbdGHqEsEODIutsfPLqP7Ds+oy7VFHyUqP07tZF3i7C8CwnHiyi4xYteRV/ATEJEMn/wmgTK5bVEfSXBhIfFzS90QcwtA1sm27tnOd06xR+qYwz6IMAbZBRB2FIjNx4APtoHISZB3hSgPPU4jP0jCoX7kgrD3k++nG2J6B6bleE48jjXOAffbml+jQ38tAK8LIOyfH6c+IfRMAUqIEINjY6CtYGkF471f6RkfK99fbscQOE4+W5jLAYjQXt922xAXQ5R+YoxUN/mwefjkLfVyWAUQVUP1H/3FUA0V7rwhuxE+8uPnkBTikXXobsxZ6V3IUognEKCU7Ei06QsQUognEo5H3HP4YEnhoQ7v+hyhUgrxFoTdhv+AsCE7L5VCrEAKsQIpxAqkECuQQqxACrECKcQKpBDvvIz5C4V45t/WxaM0AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                      <uix:Target DesignTimeRectangle="174, 277, 62, 14" ElementType="Text" FriendlyName="'Documents'" FullSelectorArgument="&lt;webctrl aaname='Documents' parentid='test-clientDetails' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Documents' parentid='test-clientDetails' tag='SPAN' type='' class='_2Xnh-' check:innerText='Documents' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAASCAYAAADv2ggfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFXSURBVFhH7ZQ9bsMwDIV7jB7Pe26RI3jLKbI2S1YvHrR0zBxkyBlYiaRk6pnxz1Q01QMMmKJEkZ8ofVATq4FQNRCqBkJlQATqvw70ab/rhR7qfXcBiBONarFupwgExt5UyyCixuFAXbir9Zd0p/OwvaNXQXBXDEH+nxfqzNWpAIGvvxE9wnE+R69b8vXBrol7VzGOdH7KMi7qmsfNvml+LNb6JFe45rynNzZpHURJHv2SXCpY1trERWsgbDKurQeQulL2ERWbwSGwbMecIJ6NgdreEbYzVKVQx5dU/FkAovLFGGi7p6sfzzXxssbBByHQ0lqnxqjtb8SvgvCT3wWiSMGCbxFESnYiiH68GvNksViOtxuEOQzUGohXAB0fgKjbb3bKpb3kq+6c66tjdvFxzKe0BwQ+luUhXQQhAHl+nPPNhzrFQLAGxP9WA6FqIFQNhKqBYBH9AEYEkF97w+NaAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:RetryScope.ActivityBody>
+                      <ui:RetryScope.Condition>
+                        <ActivityFunc x:TypeArguments="x:Boolean">
+                          <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'UL'" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                            <ui:UiElementExists.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce8203bf-e69b-4e65-b00e-fbb98a4bbbfc" InformativeScreenshot="3ebda354a2930c60aee4710201b18cf8" Selector="&lt;webctrl tag='UL' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:UiElementExists.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:UiElementExists>
+                        </ActivityFunc>
+                      </ui:RetryScope.Condition>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:RetryScope>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayBefore="2" DisplayName="Click 'Add Form'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31852679-a839-4d05-810e-cb8d3db218f1" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://cpa.taxcaddy.com/#/cpa/offlineclient/878054/2022/tax-documents/requests" DesignTimeRectangle="1062, 398, 128, 14" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'7216 Consent'" FullSelectorArgument="&lt;webctrl aaname='Add Form 1041' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='7216 Consent (Not Received)' tag='SPAN' type='' class='' check:innerText='7216 Consent (Not Received)' /&gt;" Guid="fc34dee9-5395-44a3-86e8-4a40b472d940" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIQAAAASCAYAAACae3b5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL8SURBVGhD7Za/ahZREMV9Fx/AB8gD5AF8ADsbC7vYKaRJpa3YiCD+LYyFEUEStEn8gygEg4J+FgaNmMLmq9f8Fs5y7mSWj08kgpnisHvnzpx7Zu7cu3tiOp12hYJQDVFoUA1RaFANUWhQDVFoMDTE5Nt+t3Dhfnfy7I0B566udw83Pw7jU+dvdVs7X4dg5k+vPOp+7P8abMzjh//lB68HezYPYvy/BNrOXHnS6yE3oDlsy3e25tYa6/o38iUenb4X84K9YW+1x7KP3hAKcBsClq4/798huvb4Xf9Ugl5QjxMoDgXhmc0fFdCdFZPcZF++vdlrVQ3IaVZDEBNzY+w1oq7ZQTlqaH+jvrQhopPgDZH5ZU3kGCsG8RRfp0g+cMEvO+/YZ9mkQZvqdqCxn9aYC7EvDvKVDaghnIPTTyyaZZOmjNdrkGl2bvFEP7iwvfyw23Brf3jqFvYcxcMcB1dr+kFIGwLBchYkggRli8lCvLB0bxCvxIWMN7NLIDb43b726lOzJnA/18lTvK41uyFUTI1dA/qIoyG2J9+b9T1u7IbwT4Z0ZprZYDbQOTK/7cle/8TPa4eOjbdfms+J9OspHtZRnHMcaggt6qKwZd8sfPBlnrETZzzMS5RDxddYPJ6E+wG6PDudgDl8nNe1Zg0xtpben7753DfE+kHBGcvPeWd9MnyNTPPNjfcN95gfm67aKk+tQ8Nm/4LwaG/Eq7G/H2qIWBgSGfuB8WQZEytibBItfzgWL602NhDFajOiFtk11vp3n+00foL7u9Z5bgjeiaUG2P7khpA/UC1jbvLNbojoF2vLuuSEb5wTIg8+2HjHrvemITIyxt5tOpXM8WSeuMxfizgoBl0uH4n0ONliEhSeT4afgCxe3824qdIKr/vFea2lWECM/D0HrwdasMGjuMhLLE3BONMsbc4T/Sa7P3ub1iXGdcQaMx95Fi+uDnbPNf2HOK6ITXAcEBu2GsLgpzeb/x9BM+imANUQhQbVEIUG1RCFBtUQBcO0+w1OPyEVmLTNbgAAAABJRU5ErkJggg==" InformativeScreenshot="3f61c612371f66203e517f9db858524f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- TaxCaddy CPA' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                              <uix:Target DesignTimeRectangle="1039, 396, 19, 19" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;svg' idx='4' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='MuiSvgIcon-root _2OM-5 MuiSvgIcon-colorSecondary' tag='svg' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVEhL1ZTBCgFRFIa9i+fwGrwA9rOzYU2sWGk2imzEihSLGcWGFMpmViQlWdjM+uq/dXWNf2bUUGPxdTvn/PNNcztNwnVd8SviI5/tjrTvR6j8cruLUmchkvnWE9Tos7xOqDzXmEphsT0X9vYgT9Tos7xOoHztnKWoOd689FGjj7ne9xIoVxLvFaBmL/USKK/2l1LCZuhjzmYKKndOV2GYtkgVelKSqYzeQB9z5JBnHirP1ify4U9BnnmoPF0eUokfyDNPPOT4dOw5u7LIcrWOag11IsvVRuD0ziLLsXa1weq5njqR5UHER26YFpX4gTzzUDnoWnv57wgDOfY88JV/g3+Vu+IBXH79m/ICkWIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                              <uix:Target DesignTimeRectangle="1026, 305, 200, 29" ElementType="ListItem" FriendlyName="'View Personal'" FullSelectorArgument="&lt;webctrl tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LI' type='' class='MuiButtonBase-root MuiListItem-root MuiMenuItem-root _3E6rL MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button' aaname='' check:innerText='View Personal Information' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMwAAAAhCAYAAACV+ESuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATRSURBVHhe7ZtBbxNHFMf9XfgAfAHEGQmuPdBjD9ATnKqWnioORQgOtBIceihVpV4KQgUkUkFASFGApImcNEoLihM1jhKjJAQQAqm9TP3b7N96nszacbIR2ej9pNF63sy8mZ15/53dtV3b2NgIa2trwXGcYtAIWqmtr6+HVquVmx3HSYFG0EptdXU1LC0t5WbHcVKgEbRSQzmLi4u52XGcFM1mM9tlaisrK2FhYSE3O46TAo2gldry8nKYn5/PzY7jpEAjaKXGvVmj0cjNjuOkQCNoZc8E8/b9v+HZi5edRN5xqkpHMDzMzM3N5ebdM9t8FT6/9igcOvXTloR9af1dXtNxqgMaQSulCubm6FxSKHGinuNUiY5gZmZmwuTkZG7eObFYDp/9Jfw4PBuePm9lR/K23EXjVAk0glYywUxMTOTmncFtlhUDCZFYyMd1/PbMqQpdgtntDvPF9ZEtYmBnsZCP69CuiKHJf8L3d6fy3CZnfngcrt37M3z23YPw7sN/uXVn1BfWunY9fH9svv55NBuXhTlgLnpBnY9xDvTXb2wHhdJ2GN5+Kehsul/v/vUA+VS9Ilqv34dPLt7Ljqn8biEwCVCxHxZ/J4LhwvHtjT92fQHZLhfafZW1BlWitB0mtXOQTpy/07nl4nj03M1kvXgnstgg5kjw2EC3uwRiImhs0NFeu5TaiyLBpHxiIyiPfHUjs43+3erU4Ui5bSebxnPsm9+67OoPG4nP0Esw2KmnPrKLx6vNi4j1TV35ZbwEN/Z4/NYXO7b82DYql2/GIt+0j+falgFjSdmrSGk7TL83Y0VCUer18M9iKKi1OLIRjCy0FkyCUICx6CwQKRYS8FkBQaJdkU/yBL2urOpD0I5+VK6+CWjrj6POx6KrdjxGUF/Y7a2o7OS1w6hf1VF/HO34rS9S6pwtlF0f/iv7bHcY+Y7baGwkxiNS51cVStthegnm+Pnb4eSloeyYKifFt24WFpMJn2pPsgKBCWfiWTSuhtYXdVSuBePzyOzyltsW1bP082nBTjnBEQeqxt1YeZMdbaDKj9qTdFWnjDoWBV88BtnpS+cW19G42FGs3dbTWDVGfOKbOvEFBVKC0ViEfOgoVL+KlLbDxLdkTPKVO/Ut3+yTx24XgdTrlgyYcBZUE6/FjhdayK4yFo0rqA0YsEEjinym6grGdetJo6sdxyzf3mGsXX6sP9unyiwKvHgMstN+OzuMbVvUPyjI7Vhs4A+6w1i79Vk1ShOMfehHDHzT3wvKrWj6wQQf+fLXzkRz1GLz2fpigYBFIgiAxeUKrjJh/VhSPuO6+Fe5dgf1g432tImDUX6w22eP7HmkXScVUAq+1Biw48vuntTT+DW2uK3NFwmGY+cc2/OvWzKdO23seO2caO7lS6TOryqgkVIEA3qtzPNKv9+MUa7nml6vlR1nP1GqYOwXl59e/r1QNNgpV13/4tKpCqUKBuzDPzsIW7h9rUzevjHzn8Y4VaJ0wUC/V8xKLhanauyJYIDd5PTVh0mhYPfbMKeKdAQzPT0dxsfHc3N58LzCK2Olfi8DHGc/g0bQSq1er4exsbHc7DhOCjSCVkr/x6XjHET25B+XjnNQccE4zgC4YBxnAFwwjjMALhjHGQAXjOMMwKZgmuF/FdHMp8LPX2cAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean">
+                  <ui:UiElementExists DisplayName="Element Exists 'DIV'" Exists="[bool_AddForm]" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="927119c7-1848-48c6-8108-caf6d5c8f5ee" InformativeScreenshot="f95a04fe95e4b5a5589e6772494c7fe3" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:UiElementExists>
+                </ActivityFunc>
+              </ui:RetryScope.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:RetryScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d20ec35e7fe2630c82feda327f5647fa.jpg" Selector="&lt;html app='chrome.exe' title='*- TaxCaddy CPA' /&gt;" Title="John Flint - TaxCaddy CPA" Url="https://cpa.taxcaddy.com/#/cpa/offlineclient/*/*/tax-documents/requests" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
