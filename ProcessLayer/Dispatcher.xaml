@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1557.6,21069.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1653.6,19412</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Dispatcher_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -52,6 +52,7 @@
       <x:String>UiPath.Excel.Helpers</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -123,6 +124,8 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -131,7 +134,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Dispatcher" sap:VirtualizedContainerService.HintSize="1568,21004.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Dispatcher" sap:VirtualizedContainerService.HintSize="1664,19347.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_ExecStatus" />
       <Variable x:TypeArguments="x:String" Name="str_TaxSoftware" />
@@ -145,7 +148,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="ServiceLayer Check" sap:VirtualizedContainerService.HintSize="1505.6,20916" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="ServiceLayer Check" sap:VirtualizedContainerService.HintSize="1601.6,19258.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dt_InputMappingData" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_ClientCreationMappingData" />
@@ -159,10 +162,10 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1443.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Inititated Dispatcher process&quot;]" />
-      <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1443.2,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Excel" />
-      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_InputMappingData]" DisplayName="Read Range Workbook - InputMappingData" sap:VirtualizedContainerService.HintSize="1443.2,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[in_Config(&quot;InSheet_MappingSheet&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_MappingSheet&quot;).ToString]" />
-      <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out processed data" DataTable="[dt_InputMappingData]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1443.2,225.6" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_ClientCreationMappingData]" SelectColumnsMode="Remove">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1539.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Inititated Dispatcher process&quot;]" />
+      <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1539.2,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Excel" />
+      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_InputMappingData]" DisplayName="Read Range Workbook - InputMappingData" sap:VirtualizedContainerService.HintSize="1539.2,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[in_Config(&quot;InSheet_MappingSheet&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_MappingSheet&quot;).ToString]" />
+      <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out processed data" DataTable="[dt_InputMappingData]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1539.2,225.6" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_ClientCreationMappingData]" SelectColumnsMode="Remove">
         <ui:FilterDataTable.Filters>
           <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
             <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -188,12 +191,12 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:FilterDataTable>
-      <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1443.2,19376.8" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+      <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="1539.2,17719.2" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
         <ui:IfElseIf.ConditionBlocks>
           <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
             <ui:IfElseIfBlock BlockType="If" Condition="[dt_ClientCreationMappingData.Rows.Count&gt;0]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
               <ui:IfElseIfBlock.Then>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,459.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,460" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -201,7 +204,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Existing Client Creation Queue available&quot;]" />
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,112.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
                       <OutArgument x:TypeArguments="sd:DataTable">[TransactionData]</OutArgument>
                     </Assign.To>
@@ -215,7 +218,7 @@
             </ui:IfElseIfBlock>
             <ui:IfElseIfBlock BlockType="ElseIf" Condition="[dt_ClientCreationMappingData.Rows.Count=0]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_4">
               <ui:IfElseIfBlock.Then>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1392,18565.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1391.2,16905.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd:DataTable" Name="dt_TaxCaddyMappingData" />
                   </Sequence.Variables>
@@ -225,8 +228,8 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1329.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Existing Client Creation Queue not available, checking for Binder input&quot;]" />
-                  <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out processed data" DataTable="[dt_InputMappingData]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1329.6,225.6" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_TaxCaddyMappingData]" SelectColumnsMode="Remove">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1328.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Existing Client Creation Queue not available, checking for Binder input&quot;]" />
+                  <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out processed data" DataTable="[dt_InputMappingData]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1328.8,225.6" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_TaxCaddyMappingData]" SelectColumnsMode="Remove">
                     <ui:FilterDataTable.Filters>
                       <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                         <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -252,7 +255,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:FilterDataTable>
-                  <If Condition="[dt_TaxCaddyMappingData.Rows.Count&gt;0]" sap:VirtualizedContainerService.HintSize="1329.6,18076.8" sap2010:WorkflowViewState.IdRef="If_6">
+                  <If Condition="[dt_TaxCaddyMappingData.Rows.Count&gt;0]" sap:VirtualizedContainerService.HintSize="1328.8,16416.8" sap2010:WorkflowViewState.IdRef="If_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -260,14 +263,14 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,459.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,460" sap2010:WorkflowViewState.IdRef="Sequence_12">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Existing Binder Creation Queue available&quot;]" />
-                        <Assign sap:VirtualizedContainerService.HintSize="433.6,112.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
                           <Assign.To>
                             <OutArgument x:TypeArguments="sd:DataTable">[TransactionData]</OutArgument>
                           </Assign.To>
@@ -279,13 +282,13 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1296,17456" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1295.2,15795.2" sap2010:WorkflowViewState.IdRef="Sequence_30">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="ClientCreation_Dispatcher" sap:VirtualizedContainerService.HintSize="1233.6,17367.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence DisplayName="ClientCreation_Dispatcher" sap:VirtualizedContainerService.HintSize="1232.8,15706.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="sd:DataTable" Name="dt_InTaxCaddySheet" />
                             <Variable x:TypeArguments="sd:DataTable" Name="dt_UnProcessedClientData" />
@@ -305,8 +308,8 @@
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1171.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Started input validation &amp; new client queue creation&quot;]" />
-                          <Assign sap:VirtualizedContainerService.HintSize="1171.2,112.8" sap2010:WorkflowViewState.IdRef="Assign_25">
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1170.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Started input validation &amp; new client queue creation&quot;]" />
+                          <Assign sap:VirtualizedContainerService.HintSize="1170.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_25">
                             <Assign.To>
                               <OutArgument x:TypeArguments="sd:DataTable">[TransactionData]</OutArgument>
                             </Assign.To>
@@ -314,25 +317,25 @@
                               <InArgument x:TypeArguments="sd:DataTable">[Nothing]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ui:BuildDataTable DataTable="[TransactionData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1171.2,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ServiceLayer&quot; msdata:Caption=&quot;&quot; default=&quot;ClientCreation_TaxSoftwares&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-                          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1171.2,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="Excel" />
-                          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_InTaxCaddySheet]" DisplayName="Read Range Workbook - TaxCaddy Data" sap:VirtualizedContainerService.HintSize="1171.2,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="[in_Config(&quot;InSheet_TaxCaddy&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_TaxCaddy&quot;).ToString]" />
-                          <ui:ReadRange AddHeaders="True" DataTable="[dt_InTaxCaddyHeader]" DisplayName="Read Range Workbook - TaxCaddy Data" sap:VirtualizedContainerService.HintSize="1171.2,120" sap2010:WorkflowViewState.IdRef="ReadRange_3" Range="A1:W1" SheetName="[in_Config(&quot;InSheet_TaxCaddy&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_TaxCaddy&quot;).ToString]" />
-                          <ui:BuildDataTable DataTable="[dt_TempData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1171.2,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Column1&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Column2&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column3&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column4&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column5&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column6&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column7&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column8&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column9&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column10&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column11&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column12&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column13&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column14&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1171.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Inititated input mapping for new queue creation, available TaxCaddy Input Feed - **** &quot;+dt_InTaxCaddySheet.RowCount.ToString+&quot; ****&quot;]" />
-                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[temp_index]" DataTable="[dt_InTaxCaddySheet]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1171.2,11882.4" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                          <ui:BuildDataTable DataTable="[TransactionData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1170.4,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ServiceLayer&quot; msdata:Caption=&quot;&quot; default=&quot;ClientCreation_TaxSoftwares&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1170.4,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="Excel" />
+                          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_InTaxCaddySheet]" DisplayName="Read Range Workbook - TaxCaddy Data" sap:VirtualizedContainerService.HintSize="1170.4,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="[in_Config(&quot;InSheet_TaxCaddy&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_TaxCaddy&quot;).ToString]" />
+                          <ui:ReadRange AddHeaders="True" DataTable="[dt_InTaxCaddyHeader]" DisplayName="Read Range Workbook - TaxCaddy Data" sap:VirtualizedContainerService.HintSize="1170.4,120" sap2010:WorkflowViewState.IdRef="ReadRange_3" Range="A1:W1" SheetName="[in_Config(&quot;InSheet_TaxCaddy&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_TaxCaddy&quot;).ToString]" />
+                          <ui:BuildDataTable DataTable="[dt_TempData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1170.4,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Column1&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Column2&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column3&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column4&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column5&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column6&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column7&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column8&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column9&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column10&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column11&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column12&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column13&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;column14&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1170.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Inititated input mapping for new queue creation, available TaxCaddy Input Feed - **** &quot;+dt_InTaxCaddySheet.RowCount.ToString+&quot; ****&quot;]" />
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[temp_index]" DataTable="[dt_InTaxCaddySheet]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1170.4,11886.4" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                             <ui:ForEachRow.Body>
                               <ActivityAction x:TypeArguments="sd:DataRow">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1136.8,11684.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1136.8,11688.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <If Condition="[string.IsNullOrEmpty(CurrentRow(&quot;Status&quot;).ToString.Trim)]" sap:VirtualizedContainerService.HintSize="1074.4,11596" sap2010:WorkflowViewState.IdRef="If_3">
+                                  <If Condition="[string.IsNullOrEmpty(CurrentRow(&quot;Status&quot;).ToString.Trim)]" sap:VirtualizedContainerService.HintSize="1074.4,11600" sap2010:WorkflowViewState.IdRef="If_3">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -340,13 +343,13 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <If.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1040.8,11329.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1040.8,11333.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="978.4,11240.8" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="978.4,11244.8" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -354,13 +357,13 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <TryCatch.Try>
-                                            <Sequence sap:VirtualizedContainerService.HintSize="941.6,10356.8" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                            <Sequence sap:VirtualizedContainerService.HintSize="941.6,10360.8" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Assign sap:VirtualizedContainerService.HintSize="879.2,112.8" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                              <Assign sap:VirtualizedContainerService.HintSize="879.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_11">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:String">[str_TaxCaddyRef]</OutArgument>
                                                 </Assign.To>
@@ -368,7 +371,7 @@
                                                   <InArgument x:TypeArguments="x:String" xml:space="preserve">[Environment.UserName+  "_" + CurrentRow("Number").ToString + "_" +  CurrentRow("TaxSoftware").ToString +  "_" + now.ToString("ddMMyy_hhmmssffff")]</InArgument>
                                                 </Assign.Value>
                                               </Assign>
-                                              <Assign sap:VirtualizedContainerService.HintSize="879.2,112.8" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                              <Assign sap:VirtualizedContainerService.HintSize="879.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_21">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:String">[str_SubSr_No]</OutArgument>
                                                 </Assign.To>
@@ -376,12 +379,12 @@
                                                   <InArgument x:TypeArguments="x:String">[CurrentRow("Number").ToString]</InArgument>
                                                 </Assign.Value>
                                               </Assign>
-                                              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="879.2,10042.4" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                                              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="879.2,10044.8" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                                                 <ui:IfElseIf.ConditionBlocks>
                                                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                     <ui:IfElseIfBlock BlockType="If" Condition="[string.IsNullOrEmpty(CurrentRow.Item(&quot;ClientID&quot;).ToString) = true AND CurrentRow.Item(&quot;CreateClientID&quot;).ToString = &quot;Yes&quot;]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
                                                       <ui:IfElseIfBlock.Then>
-                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="828.8,7274.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="828.8,7275.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                                           <Sequence.Variables>
                                                             <Variable x:TypeArguments="sd:DataTable" Name="dt_TaxSoftwaresheet" />
                                                             <Variable x:TypeArguments="sd:DataTable" Name="dt_TaxSoftwareHeader" />
@@ -395,7 +398,7 @@
                                                           <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="766.4,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="Excel" />
                                                           <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_TaxSoftwaresheet]" DisplayName="Read Range Workbook - TaxSoftwareData" sap:VirtualizedContainerService.HintSize="766.4,120" sap2010:WorkflowViewState.IdRef="ReadRange_4" SheetName="[CurrentRow.Item(&quot;TaxSoftware&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_TaxSoftware&quot;).ToString]" />
                                                           <ui:ReadRange AddHeaders="True" DataTable="[dt_TaxSoftwareHeader]" DisplayName="Read Range Workbook - TaxSoftwareData" sap:VirtualizedContainerService.HintSize="766.4,120" sap2010:WorkflowViewState.IdRef="ReadRange_5" Range="A1:W1" SheetName="[CurrentRow.Item(&quot;TaxSoftware&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_TaxSoftware&quot;).ToString]" />
-                                                          <Assign sap:VirtualizedContainerService.HintSize="766.4,112.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                                          <Assign sap:VirtualizedContainerService.HintSize="766.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
                                                             <Assign.To>
                                                               <OutArgument x:TypeArguments="x:Boolean">[bool_ClientDataNotAvailable]</OutArgument>
                                                             </Assign.To>
@@ -1096,10 +1099,10 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ForEachRow>
-                          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1171.2,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_8" ProcessName="Excel" />
-                          <ui:AppendRange DataTable="[dt_TempData]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="1171.2,148" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="[in_Config(&quot;InSheet_MappingSheet&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_MappingSheet&quot;).ToString]" />
-                          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1171.2,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="Excel" />
-                          <Assign sap:VirtualizedContainerService.HintSize="1171.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1170.4,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_8" ProcessName="Excel" />
+                          <ui:AppendRange DataTable="[dt_TempData]" DisplayName="Append Range Workbook" sap:VirtualizedContainerService.HintSize="1170.4,148" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="[in_Config(&quot;InSheet_MappingSheet&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_MappingSheet&quot;).ToString]" />
+                          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1170.4,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="Excel" />
+                          <Assign sap:VirtualizedContainerService.HintSize="1170.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
                             <Assign.To>
                               <OutArgument x:TypeArguments="sd:DataTable">[dt_InputMappingData]</OutArgument>
                             </Assign.To>
@@ -1107,8 +1110,8 @@
                               <InArgument x:TypeArguments="sd:DataTable">[Nothing]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_InTaxCaddySheet]" DisplayName="Read Range Workbook - InputMappingData" sap:VirtualizedContainerService.HintSize="1171.2,120" sap2010:WorkflowViewState.IdRef="ReadRange_6" SheetName="[in_Config(&quot;InSheet_TaxCaddy&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_TaxCaddy&quot;).ToString]" />
-                          <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out processed data" DataTable="[dt_InTaxCaddySheet]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1171.2,225.6" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[dt_UnProcessedClientData]" SelectColumnsMode="Remove">
+                          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_InTaxCaddySheet]" DisplayName="Read Range Workbook - InputMappingData" sap:VirtualizedContainerService.HintSize="1170.4,120" sap2010:WorkflowViewState.IdRef="ReadRange_6" SheetName="[in_Config(&quot;InSheet_TaxCaddy&quot;).ToString]" WorkbookPath="[in_Config(&quot;InFile_TaxCaddy&quot;).ToString]" />
+                          <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out processed data" DataTable="[dt_InTaxCaddySheet]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1170.4,225.6" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[dt_UnProcessedClientData]" SelectColumnsMode="Remove">
                             <ui:FilterDataTable.Filters>
                               <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                 <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -1134,7 +1137,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:FilterDataTable>
-                          <If Condition="[dt_UnProcessedClientData.RowCount&gt;0]" sap:VirtualizedContainerService.HintSize="1171.2,1553.6" sap2010:WorkflowViewState.IdRef="If_4">
+                          <If Condition="[dt_UnProcessedClientData.RowCount&gt;0]" sap:VirtualizedContainerService.HintSize="1170.4,1553.6" sap2010:WorkflowViewState.IdRef="If_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1216,115 +1219,149 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out processed data" DataTable="[dt_InTaxCaddySheet]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="1171.2,225.6" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[dt_UnProcessedTaxCaddyData]" SelectColumnsMode="Remove">
-                            <ui:FilterDataTable.Filters>
-                              <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
-                                <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
-                                  <ui:FilterOperationArgument.Column>
-                                    <InArgument x:TypeArguments="x:String">["Status"]</InArgument>
-                                  </ui:FilterOperationArgument.Column>
-                                  <ui:FilterOperationArgument.Operand>
-                                    <InArgument x:TypeArguments="x:String">["Binder Creation - InQueue"]</InArgument>
-                                  </ui:FilterOperationArgument.Operand>
-                                </ui:FilterOperationArgument>
-                              </scg:List>
-                            </ui:FilterDataTable.Filters>
-                            <ui:FilterDataTable.SelectColumns>
-                              <scg:List x:TypeArguments="InArgument" Capacity="4">
-                                <x:Null />
-                              </scg:List>
-                            </ui:FilterDataTable.SelectColumns>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </ui:FilterDataTable>
-                          <If Condition="[dt_UnProcessedTaxCaddyData.RowCount&gt;0]" sap:VirtualizedContainerService.HintSize="1171.2,1553.6" sap2010:WorkflowViewState.IdRef="If_5">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="515.2,1278.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1170.4,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,305.6" sap2010:WorkflowViewState.IdRef="Sequence_49">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap:VirtualizedContainerService.HintSize="452.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[dt_UnProcessedTaxCaddyData .Columns(0).ColumnName]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">Reference</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="452.8,1076" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out processed data" DataTable="[dt_InTaxCaddySheet]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="353.6,216.8" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[dt_UnProcessedTaxCaddyData]" SelectColumnsMode="Remove">
+                                  <ui:FilterDataTable.Filters>
+                                    <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                      <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                        <ui:FilterOperationArgument.Column>
+                                          <InArgument x:TypeArguments="x:String">["Status"]</InArgument>
+                                        </ui:FilterOperationArgument.Column>
+                                        <ui:FilterOperationArgument.Operand>
+                                          <InArgument x:TypeArguments="x:String">["Binder Creation - InQueue"]</InArgument>
+                                        </ui:FilterOperationArgument.Operand>
+                                      </ui:FilterOperationArgument>
+                                    </scg:List>
+                                  </ui:FilterDataTable.Filters>
+                                  <ui:FilterDataTable.SelectColumns>
+                                    <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                      <x:Null />
+                                    </scg:List>
+                                  </ui:FilterDataTable.SelectColumns>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:FilterDataTable>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1170.4,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="611.2,1633.6" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If Condition="[dt_UnProcessedTaxCaddyData.RowCount&gt;=0]" sap:VirtualizedContainerService.HintSize="548.8,1544.8" sap2010:WorkflowViewState.IdRef="If_5">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch.Try>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="416,527.2" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="515.2,1278.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:BulkAddQueueItems ContinueOnError="False" DisplayName="Queue - TaxCaddy Input Data" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="353.6,227.2" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_2" QueueItemsDataTable="[dt_UnProcessedTaxCaddyData]" QueueName="[in_Config(&quot;Orchestrator_QName_BinderCreation&quot;).ToString]">
-                                        <ui:BulkAddQueueItems.Result>
-                                          <OutArgument x:TypeArguments="sd:DataTable" />
-                                        </ui:BulkAddQueueItems.Result>
-                                        <ui:BulkAddQueueItems.TimeoutMS>
-                                          <InArgument x:TypeArguments="x:Int32" />
-                                        </ui:BulkAddQueueItems.TimeoutMS>
+                                      <Assign sap:VirtualizedContainerService.HintSize="452.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[dt_UnProcessedTaxCaddyData .Columns(0).ColumnName]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">Reference</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="452.8,1076" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                      </ui:BulkAddQueueItems>
-                                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;NewCheck&quot;}]" DataTable="[TransactionData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="353.6,211.2" sap2010:WorkflowViewState.IdRef="AddDataRow_6" />
+                                        <TryCatch.Try>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="416,527.2" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:BulkAddQueueItems ContinueOnError="False" DisplayName="Queue - TaxCaddy Input Data" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="353.6,227.2" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_2" QueueItemsDataTable="[dt_UnProcessedTaxCaddyData]" QueueName="[in_Config(&quot;Orchestrator_QName_BinderCreation&quot;).ToString]">
+                                              <ui:BulkAddQueueItems.Result>
+                                                <OutArgument x:TypeArguments="sd:DataTable" />
+                                              </ui:BulkAddQueueItems.Result>
+                                              <ui:BulkAddQueueItems.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:BulkAddQueueItems.TimeoutMS>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:BulkAddQueueItems>
+                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;NewCheck&quot;}]" DataTable="[TransactionData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="353.6,211.2" sap2010:WorkflowViewState.IdRef="AddDataRow_6" />
+                                          </Sequence>
+                                        </TryCatch.Try>
+                                        <TryCatch.Catches>
+                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="419.2,213.6" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ActivityAction x:TypeArguments="s:Exception">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                              </ActivityAction.Argument>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Unable to create Binder Creation queue -&quot;+exception.Message]" />
+                                            </ActivityAction>
+                                          </Catch>
+                                        </TryCatch.Catches>
+                                      </TryCatch>
                                     </Sequence>
-                                  </TryCatch.Try>
-                                  <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="419.2,213.6" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ActivityAction x:TypeArguments="s:Exception">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                        </ActivityAction.Argument>
-                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Unable to create Binder Creation queue -&quot;+exception.Message]" />
-                                      </ActivityAction>
-                                    </Catch>
-                                  </TryCatch.Catches>
-                                </TryCatch>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
                               </Sequence>
-                            </If.Then>
-                            <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </Sequence>
-                            </If.Else>
-                          </If>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1171.2,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1170.4,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_44">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -1365,7 +1402,13 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:IfElseIf>
-      <If Condition="[TransactionData.RowCount=0]" sap:VirtualizedContainerService.HintSize="1443.2,575.2" sap2010:WorkflowViewState.IdRef="If_8">
+      <If Condition="[TransactionData.RowCount=0]" sap:VirtualizedContainerService.HintSize="1539.2,575.2" sap2010:WorkflowViewState.IdRef="If_8">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
         <If.Then>
           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,300" sap2010:WorkflowViewState.IdRef="Sequence_47">
             <sap:WorkflowViewStateService.ViewState>
@@ -1386,7 +1429,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1443.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Completed Dispatcher process&quot;]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1539.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Completed Dispatcher process&quot;]" />
     </Sequence>
   </Sequence>
 </Activity>
