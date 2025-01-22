@@ -1,15 +1,3 @@
 {
-  "Value": {
-    "ServicesLayer/BinderCreation_TaxCaddy/ULTRA.xaml": [
-      {
-        "IsEnabled": true,
-        "Annotation": null,
-        "Id": "1cc3e1c9-95ea-425e-bd94-83d2b08900c6",
-        "ActivityIdRef": "ReadRange_1",
-        "ActivityId": "1.3751",
-        "ActivityName": "Read Range Workbook",
-        "IsTransient": false
-      }
-    ]
-  }
+  "Value": {}
 }
