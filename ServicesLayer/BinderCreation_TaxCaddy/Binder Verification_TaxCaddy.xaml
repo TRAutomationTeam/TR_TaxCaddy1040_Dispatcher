@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1100,9916.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1408.8,9895.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AfterSubmissionWizardClose_ExtractingBinderId_Stauts__1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="86">
@@ -131,7 +131,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="AfterSubmissionWizardClose_ExtractingBinderId_Stauts_" sap:VirtualizedContainerService.HintSize="1110.4,9852" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AfterSubmissionWizardClose_ExtractingBinderId_Stauts_" sap:VirtualizedContainerService.HintSize="1110.4,9830.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="StrBinderId" />
       <Variable x:TypeArguments="x:Boolean" Name="BoolAddDocButton" />
@@ -146,13 +146,13 @@
         <x:Boolean x:Key="IsPinned">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Jack Anderson - TaxCaddy CPA" sap:VirtualizedContainerService.HintSize="1048,9336.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="653b6506-400c-48b5-8be9-7c335b6dee80" Timeout="30" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Jack Anderson - TaxCaddy CPA" sap:VirtualizedContainerService.HintSize="1048,9315.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="653b6506-400c-48b5-8be9-7c335b6dee80" Timeout="30" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1014.4,9088" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1014.4,9066.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="bool_Refresh" />
             </Sequence.Variables>
@@ -786,14 +786,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NGetText>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,144" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;Binder Status  - &quot;+BinderStatus]">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="952,176" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;Binder Status  - &quot;+BinderStatus]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <TryCatch DisplayName="Try Catch Member Validation TC" sap:VirtualizedContainerService.HintSize="952,1226.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+            <TryCatch DisplayName="Try Catch Member Validation TC" sap:VirtualizedContainerService.HintSize="952,1172.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -801,14 +801,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <TryCatch.Try>
-                <Sequence sap:VirtualizedContainerService.HintSize="449.6,995.2" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                <Sequence sap:VirtualizedContainerService.HintSize="449.6,910.4" sap2010:WorkflowViewState.IdRef="Sequence_40">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName=" Click - Member" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="653b6506-400c-48b5-8be9-7c335b6dee80" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName=" Click - Member" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="653b6506-400c-48b5-8be9-7c335b6dee80" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://production.sureprep.com/Fileroom/Fileroom/Listing#" DesignTimeRectangle="416, 274, 6, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='grid' class='k-selectable' tag='TABLE' /&gt;&lt;webctrl class='Members' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='grid' class='k-selectable' tag='TABLE' /&gt;&lt;webctrl class='Members' type='' tag='A' aaname='*' /&gt;" Guid="aa6b2983-e759-4233-8e67-dbac43b06081" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAYAAACp65zuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACmSURBVDhPY/hPJBhViBcgFF7Z9D8reBIE23b/j8/Y9P/md6gcEOAw8cv/8619/+Nn3YLy8Vj9csPU/1GtZ/7/hPKxK3y063+V2cz/629/gQpgUfjl9jagoqn/Z515AxWBACSFX/7fXzn3f3zU6v9HHiFMggG4wvfbZ/4Pler+H+UD9TkI5+/9/xIqj9Mz6ACs8Omdt2DT0HGUYh9YEQiQZiJh8P8/ACEoy18snD98AAAAAElFTkSuQmCC" InformativeScreenshot="d43b57cb31db510e14d1392d2ccbc231.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FileRoom' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -824,7 +824,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <uix:NGetAttribute Attribute="checked" DisplayName="Get Attribute 'Select All'" sap:VirtualizedContainerService.HintSize="387.2,208" sap2010:WorkflowViewState.IdRef="NGetAttribute_13" ScopeIdentifier="653b6506-400c-48b5-8be9-7c335b6dee80" Version="V3">
+                  <uix:NGetAttribute Attribute="checked" DisplayName="Get Attribute 'Select All'" sap:VirtualizedContainerService.HintSize="387.2,240" sap2010:WorkflowViewState.IdRef="NGetAttribute_13" ScopeIdentifier="653b6506-400c-48b5-8be9-7c335b6dee80" Version="V3">
                     <uix:NGetAttribute.Result>
                       <OutArgument x:TypeArguments="x:Boolean">[Memberadded]</OutArgument>
                     </uix:NGetAttribute.Result>
@@ -843,7 +843,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NGetAttribute>
-                  <If Condition="[Memberadded = True]" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="If_6">
+                  <If Condition="[Memberadded = True]" sap:VirtualizedContainerService.HintSize="449.6,188" sap2010:WorkflowViewState.IdRef="If_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -851,7 +851,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="300,60.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,489.6" sap2010:WorkflowViewState.IdRef="Sequence_36">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="Member" />
                         </Sequence.Variables>
@@ -860,7 +860,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NGetText DisplayName="Get Text 'Chellikattil, Sanjay'" sap:VirtualizedContainerService.HintSize="334.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="653b6506-400c-48b5-8be9-7c335b6dee80" TextString="[Member]" Version="V3">
+                        <uix:NGetText DisplayName="Get Text 'Chellikattil, Sanjay'" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="653b6506-400c-48b5-8be9-7c335b6dee80" TextString="[Member]" Version="V3">
                           <uix:NGetText.Target>
                             <uix:TargetAnchorable BrowserURL="https://production.sureprep.com/Fileroom/Fileroom/Listing#" DesignTimeRectangle="606, 394, 281, 27" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='grid' class='k-selectable' tableRow='1' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='grid' class='k-selectable' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class=' auto-ellipsis mandatory-field ' /&gt;" Guid="e9821525-253a-43e6-b640-2bff6b31274c" ImageBase64="" InformativeScreenshot="6a10758e0122917ce8dbbab69afbb659.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FileRoom' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
@@ -876,7 +876,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NGetText>
-                        <If Condition="[in_dtTaxCaddy.Rows(0).Item(&quot;Member Name&quot;).ToString = Member]" sap:VirtualizedContainerService.HintSize="334.4,304.8" sap2010:WorkflowViewState.IdRef="If_7">
+                        <If Condition="[in_dtTaxCaddy.Rows(0).Item(&quot;Member Name&quot;).ToString = Member]" sap:VirtualizedContainerService.HintSize="449.6,211.2" sap2010:WorkflowViewState.IdRef="If_7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -884,42 +884,28 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence sap:VirtualizedContainerService.HintSize="300,60.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Member added successfully&quot;]">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </ui:MessageBox>
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence sap:VirtualizedContainerService.HintSize="300,60.8" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.80000000000001" sap2010:WorkflowViewState.IdRef="Sequence_38">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Member not added successfully&quot;]">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </ui:MessageBox>
                             </Sequence>
                           </If.Else>
                         </If>
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap:VirtualizedContainerService.HintSize="300,60.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -928,7 +914,7 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="653b6506-400c-48b5-8be9-7c335b6dee80" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="653b6506-400c-48b5-8be9-7c335b6dee80" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://production.sureprep.com/Fileroom/Fileroom/Listing#" CvElementArea="1145, 903, 90, 35" CvTextArea="1169, 913, 43, 15" CvTextArgument="Close" CvType="Button" DesignTimeRectangle="1148, 904, 88, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='btnAssignMemberCancel' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='btnAssignMemberCancel' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='cmd-btn-content' aaname='                             Close                         ' check:innerText='Close' /&gt;" Guid="21c22aaa-0192-4b22-9c55-f09bca71dc82" InformativeScreenshot="996e9a0d30d59ff704f5896623122993.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FileRoom' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                     </uix:NClick.Target>
