@@ -3,7 +3,7 @@
     <x:Property Name="out_CurrentRow" Type="InArgument(sd:DataRow)" />
     <x:Property Name="out_ClientID" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1408.8,3610.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1408.8,1100</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -52,6 +52,8 @@
       <x:String>System.Net.Mail</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -130,20 +132,20 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="788,3545.6" sap2010:WorkflowViewState.IdRef="Sequence_339">
+  <Sequence sap:VirtualizedContainerService.HintSize="575.2,1035.2" sap2010:WorkflowViewState.IdRef="Sequence_339">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[out_CurrentRow(&quot;Type&quot;).ToString]" sap:VirtualizedContainerService.HintSize="725.6,3291.2" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[out_CurrentRow(&quot;Type&quot;).ToString]" sap:VirtualizedContainerService.HintSize="512.8,196" sap2010:WorkflowViewState.IdRef="Switch`1_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard x:Key="1040" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: 2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Screen     Ctrl+I] (f9f3" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_37" OpenMode="Never" ScopeGuid="f150c5a6-f30d-4238-a8cb-f099cda0df68" Version="V2">
+      <uix:NApplicationCard x:Key="1040" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: 2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Screen     Ctrl+I] (f9f3" sap:VirtualizedContainerService.HintSize="202.4,24.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_37" OpenMode="Never" ScopeGuid="f150c5a6-f30d-4238-a8cb-f099cda0df68" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -157,7 +159,7 @@
               </sap:WorkflowViewStateService.ViewState>
               <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Income'" sap:VirtualizedContainerService.HintSize="619.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_69" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Version="V3">
                 <uix:NClick.Target>
-                  <uix:TargetAnchorable CvTextArea="37, 226, 65, 16" CvTextArgument="Income" CvType="Text" DesignTimeRectangle="37, 226, 65, 16" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Income'" Guid="8386a37e-8a5f-4ed4-9eb6-f64184e103d5" InformativeScreenshot="9e05e7968296926fc3e83acf28acd07d.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                  <uix:TargetAnchorable CvTextArea="37, 226, 65, 16" CvTextArgument="Income" CvType="Text" DesignTimeRectangle="37, 226, 65, 16" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="8386a37e-8a5f-4ed4-9eb6-f64184e103d5" InformativeScreenshot="9e05e7968296926fc3e83acf28acd07d.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                 </uix:NClick.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -180,7 +182,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Broker'" sap:VirtualizedContainerService.HintSize="483.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_70" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Version="V3">
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvElementArea="427, 96, 80, 29" CvTextArea="435, 101, 56, 16" CvTextArgument="Broker" CvType="Button" DesignTimeRectangle="427, 96, 80, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Broker'" Guid="5bbd712e-11f4-425e-84c1-15af88df0aa9" InformativeScreenshot="c1d68a29df49c8f808d01016dbe238da.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                          <uix:TargetAnchorable CvElementArea="427, 96, 80, 29" CvTextArea="435, 101, 56, 16" CvTextArgument="Broker" CvType="Button" DesignTimeRectangle="427, 96, 80, 29" DesignTimeScaleFactor="1.25" ElementType="Button" Guid="5bbd712e-11f4-425e-84c1-15af88df0aa9" InformativeScreenshot="c1d68a29df49c8f808d01016dbe238da.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -191,10 +193,10 @@
                       </uix:NClick>
                       <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Payer's Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_45" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="[out_CurrentRow(&quot;Div Name&quot;).ToString+ &quot;[k(Down)]&quot;]" Version="V3">
                         <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable CvElementArea="711, 285, 737, 39" CvType="InputBox" DesignTimeRectangle="711, 284, 738, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Payer's Name'" Guid="ff4689c0-bc94-4b99-bdc1-83b3d4eaa415" InformativeScreenshot="8dfc6db497ef2acf84e0bb57e841e162.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvElementArea="711, 285, 737, 39" CvType="InputBox" DesignTimeRectangle="711, 284, 738, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="ff4689c0-bc94-4b99-bdc1-83b3d4eaa415" InformativeScreenshot="8dfc6db497ef2acf84e0bb57e841e162.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvTextArea="508, 288, 186, 32" CvTextArgument="Payer's Name" CvType="Text" DesignTimeRectangle="508, 288, 185, 32" ElementType="Text" FriendlyName="'Payer's Name'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                <uix:Target CvTextArea="508, 288, 186, 32" CvTextArgument="Payer's Name" CvType="Text" DesignTimeRectangle="508, 288, 185, 32" ElementType="Text" Guid="93084551-f01c-45e9-801d-f51a70606391" SearchSteps="CV" TargetType="ComputerVisionBased" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
@@ -208,7 +210,7 @@
                       </uix:NTypeInto>
                       <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 1099div" sap:VirtualizedContainerService.HintSize="483.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_79" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Version="V3">
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvElementArea="421, 125, 98, 30" CvTextArea="428, 132, 83, 15" CvTextArgument="1099-Int/Div" CvType="Button" DesignTimeRectangle="421, 125, 98, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'1099-Int/Div'" Guid="dddcd930-f8cf-429a-8a26-735ed40f1db0" InformativeScreenshot="189e8cb8d694791abe5676626311fdfc.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                          <uix:TargetAnchorable CvElementArea="421, 125, 98, 30" CvTextArea="428, 132, 83, 15" CvTextArgument="1099-Int/Div" CvType="Button" DesignTimeRectangle="421, 125, 98, 29" DesignTimeScaleFactor="1.25" ElementType="Button" Guid="dddcd930-f8cf-429a-8a26-735ed40f1db0" InformativeScreenshot="189e8cb8d694791abe5676626311fdfc.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -227,11 +229,11 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'S'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_77" ScopeIdentifier="05cefc21-c0a9-46dd-b582-396bd5dab6ab" Text="56" Version="V3">
                               <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable CvElementArea="1630, 285, 234, 46" CvType="InputBox" DesignTimeRectangle="1630, 285, 234, 46" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'S'" Guid="c511cb78-9054-414f-b70e-f6d0398a201f" InformativeScreenshot="963b364d7ce69058bbb5cbcb441a7c4a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [DFGJS jack, john] [Office: &amp;lt;default&amp;gt; -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable CvElementArea="1630, 285, 234, 46" CvType="InputBox" DesignTimeRectangle="1630, 285, 234, 46" DesignTimeScaleFactor="1" ElementType="InputBox" Guid="c511cb78-9054-414f-b70e-f6d0398a201f" InformativeScreenshot="963b364d7ce69058bbb5cbcb441a7c4a.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [DFGJS jack, john] [Office: &amp;lt;default&amp;gt; -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
                                     <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                                      <uix:Target CvTextArea="1614, 300, 11, 16" CvTextArgument="S" CvType="Text" DesignTimeRectangle="1614, 300, 11, 16" ElementType="Text" FriendlyName="'S'" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                                      <uix:Target CvTextArea="318, 292, 615, 33" CvTextArgument="Interest income (Forms 1099-INT &amp; 1099-OID)" CvType="Text" DesignTimeRectangle="318, 292, 615, 33" ElementType="Text" FriendlyName="'Interest income'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      <uix:Target CvTextArea="1614, 300, 11, 16" CvTextArgument="S" CvType="Text" DesignTimeRectangle="1614, 300, 11, 16" ElementType="Text" Guid="598a4f71-e3a5-4750-b5f1-ddea06902eaa" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      <uix:Target CvTextArea="318, 292, 615, 33" CvTextArgument="Interest income (Forms 1099-INT &amp; 1099-OID)" CvType="Text" DesignTimeRectangle="318, 292, 615, 33" ElementType="Text" Guid="3f9f83bc-6053-4ec7-8a0d-2a6638c070bb" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
@@ -248,10 +250,10 @@
                       </ui:CommentOut>
                       <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Dividend income'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_61" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="46" Version="V3">
                         <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable CvElementArea="665, 408, 196, 40" CvType="InputBox" DesignTimeRectangle="665, 408, 196, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Dividend income'" Guid="3c621a6a-c0c3-4427-9adf-c1c4e3fbca0a" InformativeScreenshot="bcc2d4dd03555987d2d600baef34e83c.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvElementArea="665, 408, 196, 40" CvType="InputBox" DesignTimeRectangle="665, 408, 196, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="3c621a6a-c0c3-4427-9adf-c1c4e3fbca0a" InformativeScreenshot="bcc2d4dd03555987d2d600baef34e83c.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvTextArea="317, 412, 350, 30" CvTextArgument="Dividend income (Form 1099-D S" CvType="Text" DesignTimeRectangle="317, 412, 350, 30" ElementType="Text" FriendlyName="'Dividend income'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                <uix:Target CvTextArea="317, 412, 350, 30" CvTextArgument="Dividend income (Form 1099-D S" CvType="Text" DesignTimeRectangle="317, 412, 350, 30" ElementType="Text" Guid="04a6d299-8ed6-4e95-96e4-3ddc37201b05" SearchSteps="CV" TargetType="ComputerVisionBased" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
@@ -265,10 +267,10 @@
                       </uix:NTypeInto>
                       <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Qualified Dividends'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_62" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="52" Version="V3">
                         <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable CvElementArea="900, 285, 212, 40" CvType="InputBox" DesignTimeRectangle="900, 285, 212, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Qualified Dividends'" Guid="64acc4e4-d994-43a5-b4da-228b98ab347f" InformativeScreenshot="b194f35adbd10fda9dea6f11c5abfbd8.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvElementArea="900, 285, 212, 40" CvType="InputBox" DesignTimeRectangle="900, 285, 212, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="64acc4e4-d994-43a5-b4da-228b98ab347f" InformativeScreenshot="b194f35adbd10fda9dea6f11c5abfbd8.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvTextArea="903, 256, 209, 23" CvTextArgument="Qualified Dividends" CvType="Text" DesignTimeRectangle="903, 256, 209, 23" ElementType="Text" FriendlyName="'Qualified Dividends'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                <uix:Target CvTextArea="903, 256, 209, 23" CvTextArgument="Qualified Dividends" CvType="Text" DesignTimeRectangle="903, 256, 209, 23" ElementType="Text" Guid="ffa5085c-62c8-4735-9abc-cca23b27c924" SearchSteps="CV" TargetType="ComputerVisionBased" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
@@ -282,10 +284,10 @@
                       </uix:NTypeInto>
                       <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Total Capital Gains'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="483.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_63" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="81" Version="V3">
                         <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable CvElementArea="1150, 285, 213, 40" CvType="InputBox" DesignTimeRectangle="1150, 285, 213, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Total Capital Gains'" Guid="bb68768c-4817-4b57-af2a-2cc9ea282157" InformativeScreenshot="99bb9409163f24ba774edee0a01bd2fc.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvElementArea="1150, 285, 213, 40" CvType="InputBox" DesignTimeRectangle="1150, 285, 213, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="bb68768c-4817-4b57-af2a-2cc9ea282157" InformativeScreenshot="99bb9409163f24ba774edee0a01bd2fc.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CvTextArea="1157, 256, 201, 26" CvTextArgument="Total Capital Gains" CvType="Text" DesignTimeRectangle="1157, 256, 201, 26" ElementType="Text" FriendlyName="'Total Capital Gains'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                <uix:Target CvTextArea="1157, 256, 201, 26" CvTextArgument="Total Capital Gains" CvType="Text" DesignTimeRectangle="1157, 256, 201, 26" ElementType="Text" Guid="efab0a68-deb1-42ad-bd57-9e22b344988a" SearchSteps="CV" TargetType="ComputerVisionBased" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
@@ -305,7 +307,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <p:CVScope DelayBefore="{x:Null}" ScopeId="{x:Null}" Server="{x:Null}" ContinueOnError="True" CvMethod="ElementDetection, OCR" DesignTimeCacheId="7eafa2b1-c86b-47a1-a9bc-5619434d3d43" DisplayName="CV Screen Scope 'wfica32.exe 2023'" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                            <p:CVScope DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" ContinueOnError="True" CvMethod="ElementDetection, OCR" DesignTimeCacheId="7eafa2b1-c86b-47a1-a9bc-5619434d3d43" DisplayName="CV Screen Scope 'wfica32.exe 2023'" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
                               <p:CVScope.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
@@ -1492,10 +1494,10 @@
                               </sap:WorkflowViewStateService.ViewState>
                               <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'W2'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_78" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eaed97c0-89af-42b8-93af-3e0a0c24e4a8" Version="V3">
                                 <uix:NClick.Target>
-                                  <uix:TargetAnchorable CvElementArea="277, 95, 75, 29" CvTextArea="285, 101, 30, 16" CvTextArgument="W2" CvType="Button" DesignTimeRectangle="277, 95, 75, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'W2'" Guid="c700ceeb-64a9-42fa-b294-675c7a421e15" InformativeScreenshot="a211d8662dd28715c7768554fbf84657.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [TJH ANDERSON, JACK] - [Input Screen   *' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable CvElementArea="277, 95, 75, 29" CvTextArea="285, 101, 30, 16" CvTextArgument="W2" CvType="Button" DesignTimeRectangle="277, 95, 75, 29" DesignTimeScaleFactor="1.25" ElementType="Button" Guid="c700ceeb-64a9-42fa-b294-675c7a421e15" InformativeScreenshot="a211d8662dd28715c7768554fbf84657.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [TJH ANDERSON, JACK] - [Input Screen   *' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                        <uix:Target CvElementArea="279, 124, 37, 35" CvType="Button" DesignTimeRectangle="279, 124, 37, 34" ElementType="Button" FriendlyName="'msrdc.exe 2023'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                        <uix:Target CvElementArea="279, 124, 37, 35" CvType="Button" DesignTimeRectangle="279, 124, 37, 34" ElementType="Button" Guid="ceb68e1e-c0fd-4891-b476-8550d27fe431" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -1509,10 +1511,10 @@
                               </uix:NClick>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Employer's name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_59" ScopeIdentifier="eaed97c0-89af-42b8-93af-3e0a0c24e4a8" Text="[out_CurrentRow(&quot;W-2 Name&quot;).ToString+ &quot;[k(Down)]&quot;+ &quot;[k(Enter)]&quot;]" Version="V3">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable CvElementArea="711, 285, 736, 39" CvType="InputBox" DesignTimeRectangle="711, 284, 739, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'msrdc.exe 2023'" Guid="5de50c96-cd8e-43e1-abaa-fc242cd1ef07" InformativeScreenshot="57272dc36869fab015839349dfa0697d.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [TJH ANDERSON, JACK] - [Input Screen   *' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable CvElementArea="711, 285, 736, 39" CvType="InputBox" DesignTimeRectangle="711, 284, 739, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="5de50c96-cd8e-43e1-abaa-fc242cd1ef07" InformativeScreenshot="57272dc36869fab015839349dfa0697d.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [TJH ANDERSON, JACK] - [Input Screen   *' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
                                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                        <uix:Target CvTextArea="461, 288, 233, 33" CvTextArgument="Employer's name" CvType="Text" DesignTimeRectangle="461, 288, 232, 32" ElementType="Text" FriendlyName="'Employer's name'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                        <uix:Target CvTextArea="461, 288, 233, 33" CvTextArgument="Employer's name" CvType="Text" DesignTimeRectangle="461, 288, 232, 32" ElementType="Text" Guid="6741e71c-92aa-4231-8e61-f2bd44e6ae97" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -1534,7 +1536,7 @@
                                     </sap:WorkflowViewStateService.ViewState>
                                     <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="6" DisplayName="Click W2" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_81" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Version="V3">
                                       <uix:NClick.Target>
-                                        <uix:TargetAnchorable CvElementArea="338, 101, 87, 24" CvTextArea="342, 106, 77, 12" CvTextArgument="W2 Facsimile" CvType="Button" DesignTimeRectangle="449, 125, 137, 29" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'W2 Facsimile'" Guid="67fff3b0-eaed-43c6-bfc5-86e87dd790ab" InformativeScreenshot="7aeef6737df4f7fd19096bb435d8fbc4.png" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [ULAB1185] [Office: &amp;lt;default&amp;gt;] - [Inp -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                                        <uix:TargetAnchorable CvElementArea="338, 101, 87, 24" CvTextArea="342, 106, 77, 12" CvTextArgument="W2 Facsimile" CvType="Button" DesignTimeRectangle="449, 125, 137, 29" DesignTimeScaleFactor="1" ElementType="Button" Guid="67fff3b0-eaed-43c6-bfc5-86e87dd790ab" InformativeScreenshot="7aeef6737df4f7fd19096bb435d8fbc4.png" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [ULAB1185] [Office: &amp;lt;default&amp;gt;] - [Inp -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                                       </uix:NClick.Target>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1624,7 +1626,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Broker'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NClick_74" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Version="V3">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable CvElementArea="401, 104, 106, 31" CvTextArea="432, 111, 56, 16" CvTextArgument="Broker" CvType="Button" DesignTimeRectangle="401, 107, 106, 26" DesignTimeScaleFactor="1.25" ElementType="TabPage" FriendlyName="'Broker'" FullSelectorArgument="&lt;wnd cls='AfxFrameOrView140' title='Input Screen     Ctrl+I' /&gt;&lt;ctrl name='W2*' role='page tab' idx='1' /&gt;" FuzzySelectorArgument="&lt;wnd cls='AfxFrameOrView140' title='Input Screen     Ctrl+I' /&gt;&lt;ctrl name='Broker  ' role='page tab' automationid='' check:text='Broker' /&gt;" Guid="e8d2f43e-b3b1-421e-973a-d9c4f92a44ad" InformativeScreenshot="12b5c208e577b01da7aaa8258cc789e8.png" ScopeSelectorArgument="&lt;wnd app='utw*.exe' cls='CSIUTW*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                        <uix:TargetAnchorable CvElementArea="401, 104, 106, 31" CvTextArea="432, 111, 56, 16" CvTextArgument="Broker" CvType="Button" DesignTimeRectangle="401, 107, 106, 26" DesignTimeScaleFactor="1.25" ElementType="TabPage" FullSelectorArgument="&lt;wnd cls='AfxFrameOrView140' title='Input Screen     Ctrl+I' /&gt;&lt;ctrl name='W2*' role='page tab' idx='1' /&gt;" FuzzySelectorArgument="&lt;wnd cls='AfxFrameOrView140' title='Input Screen     Ctrl+I' /&gt;&lt;ctrl name='Broker  ' role='page tab' automationid='' check:text='Broker' /&gt;" Guid="e8d2f43e-b3b1-421e-973a-d9c4f92a44ad" InformativeScreenshot="12b5c208e577b01da7aaa8258cc789e8.png" ScopeSelectorArgument="&lt;wnd app='utw*.exe' cls='CSIUTW*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
                       </uix:NClick.Target>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1635,10 +1637,10 @@
                     </uix:NClick>
                     <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Employer's name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NTypeInto_56" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="[out_CurrentRow(&quot;Div Name&quot;).ToString+ &quot;[k(Down)]&quot;]" Version="V3">
                       <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable CvElementArea="724, 294, 731, 39" CvType="InputBox" DesignTimeRectangle="724, 294, 731, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Employer's name'" Guid="273bb8f8-31dc-4029-a1d3-e044a4597daf" ImageBase64="" InformativeScreenshot="70e07b008b6318b0b0a7e4a03d225711.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='utw*.exe' cls='CSIUTW*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                        <uix:TargetAnchorable CvElementArea="724, 294, 731, 39" CvType="InputBox" DesignTimeRectangle="724, 294, 731, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="273bb8f8-31dc-4029-a1d3-e044a4597daf" ImageBase64="" InformativeScreenshot="70e07b008b6318b0b0a7e4a03d225711.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='utw*.exe' cls='CSIUTW*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                           <uix:TargetAnchorable.Anchors>
                             <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CvTextArea="471, 298, 233, 32" CvTextArgument="Employer's name" CvType="Text" DesignTimeRectangle="471, 298, 233, 32" ElementType="Text" FriendlyName="'Employer's name'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              <uix:Target CvTextArea="471, 298, 233, 32" CvTextArgument="Employer's name" CvType="Text" DesignTimeRectangle="471, 298, 233, 32" ElementType="Text" Guid="7ab7aeab-9134-48ad-aa4e-58d8252f412e" SearchSteps="CV" TargetType="ComputerVisionBased" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
                         </uix:TargetAnchorable>
@@ -1681,10 +1683,10 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Wages, tips'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_66" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="[&quot;44&quot; + &quot;[k(tab)]&quot;]" Version="V3">
                               <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable CvElementArea="1189, 218, 245, 40" CvType="InputBox" DesignTimeRectangle="1189, 218, 245, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Wages, tips'" Guid="2ec234ab-b6d3-4003-9622-924042a4cf52" InformativeScreenshot="0e8028a6d62d05e40d5609a77aefe8ea.png" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [ULAB1185] [Office: &amp;lt;default&amp;gt;] - [Inp -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable CvElementArea="1189, 218, 245, 40" CvType="InputBox" DesignTimeRectangle="1189, 218, 245, 40" DesignTimeScaleFactor="1" ElementType="InputBox" Guid="2ec234ab-b6d3-4003-9622-924042a4cf52" InformativeScreenshot="0e8028a6d62d05e40d5609a77aefe8ea.png" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [ULAB1185] [Office: &amp;lt;default&amp;gt;] - [Inp -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
                                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvTextArea="1086, 190, 123, 24" CvTextArgument="Wages, tips" CvType="Text" DesignTimeRectangle="1086, 190, 123, 24" ElementType="Text" FriendlyName="'Wages, tips'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      <uix:Target CvTextArea="1086, 190, 123, 24" CvTextArgument="Wages, tips" CvType="Text" DesignTimeRectangle="1086, 190, 123, 24" ElementType="Text" Guid="70abb7f9-e5f9-4c5a-897d-0094d8808c16" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
@@ -1698,10 +1700,10 @@
                             </uix:NTypeInto>
                             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Fed W/H'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_67" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="[&quot;42&quot; + &quot;[k(tab)]&quot;]" Version="V3">
                               <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable CvElementArea="1538, 219, 264, 41" CvType="InputBox" DesignTimeRectangle="1538, 218, 263, 41" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Fed W/H'" Guid="3778d61c-a727-456f-8b66-f44149d28df4" InformativeScreenshot="992351e99c876a0d7a17694f22f18f7d.png" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [ULAB1185] [Office: &amp;lt;default&amp;gt;] - [Inp -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable CvElementArea="1538, 219, 264, 41" CvType="InputBox" DesignTimeRectangle="1538, 218, 263, 41" DesignTimeScaleFactor="1" ElementType="InputBox" Guid="3778d61c-a727-456f-8b66-f44149d28df4" InformativeScreenshot="992351e99c876a0d7a17694f22f18f7d.png" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [ULAB1185] [Office: &amp;lt;default&amp;gt;] - [Inp -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
                                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvTextArea="1519, 187, 94, 26" CvTextArgument="Fed W/H" CvType="Text" DesignTimeRectangle="1519, 187, 94, 26" ElementType="Text" FriendlyName="'Fed W/H'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      <uix:Target CvTextArea="1519, 187, 94, 26" CvTextArgument="Fed W/H" CvType="Text" DesignTimeRectangle="1519, 187, 94, 26" ElementType="Text" Guid="3fd84983-5a37-46c8-9817-aff96b925280" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
@@ -1715,10 +1717,10 @@
                             </uix:NTypeInto>
                             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '10 Dependent'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_68" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="49" Version="V3">
                               <uix:NTypeInto.Target>
-                                <uix:TargetAnchorable CvElementArea="1646, 553, 155, 41" CvType="InputBox" DesignTimeRectangle="1646, 552, 155, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'10 Dependent'" Guid="69da5af8-093b-4cdf-9b97-3936261cb9a4" InformativeScreenshot="3321ee34faff691c9eaa5aa2dbea270f.png" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [ULAB1185] [Office: &amp;lt;default&amp;gt;] - [Inp -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable CvElementArea="1646, 553, 155, 41" CvType="InputBox" DesignTimeRectangle="1646, 552, 155, 40" DesignTimeScaleFactor="1" ElementType="InputBox" Guid="69da5af8-093b-4cdf-9b97-3936261cb9a4" InformativeScreenshot="3321ee34faff691c9eaa5aa2dbea270f.png" ScopeSelectorArgument="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='2023 UltraTax CS  / 1040 [ULAB1185] [Office: &amp;lt;default&amp;gt;] - [Inp -*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
                                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CvTextArea="1474, 522, 310, 26" CvTextArgument="10 Dependent care benefits" CvType="Text" DesignTimeRectangle="1474, 522, 309, 26" ElementType="Text" FriendlyName="'10 Dependent'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      <uix:Target CvTextArea="1474, 522, 310, 26" CvTextArgument="10 Dependent care benefits" CvType="Text" DesignTimeRectangle="1474, 522, 309, 26" ElementType="Text" Guid="fd8bcc3f-fe71-4630-bd30-c54c1cbb57c8" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
@@ -1773,7 +1775,7 @@
               </sap:WorkflowViewStateService.ViewState>
               <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Income'" sap:VirtualizedContainerService.HintSize="589.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_84" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Version="V3">
                 <uix:NClick.Target>
-                  <uix:TargetAnchorable CvTextArea="37, 226, 65, 16" CvTextArgument="Income" CvType="Text" DesignTimeRectangle="37, 226, 65, 16" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Income'" Guid="8386a37e-8a5f-4ed4-9eb6-f64184e103d5" InformativeScreenshot="9e05e7968296926fc3e83acf28acd07d.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                  <uix:TargetAnchorable CvTextArea="37, 226, 65, 16" CvTextArgument="Income" CvType="Text" DesignTimeRectangle="37, 226, 65, 16" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="8386a37e-8a5f-4ed4-9eb6-f64184e103d5" InformativeScreenshot="9e05e7968296926fc3e83acf28acd07d.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                 </uix:NClick.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1796,7 +1798,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Broker'" sap:VirtualizedContainerService.HintSize="487.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_85" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Version="V3">
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvElementArea="427, 96, 80, 29" CvTextArea="435, 101, 56, 16" CvTextArgument="Broker" CvType="Button" DesignTimeRectangle="427, 96, 80, 29" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Broker'" Guid="5bbd712e-11f4-425e-84c1-15af88df0aa9" InformativeScreenshot="c1d68a29df49c8f808d01016dbe238da.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+                          <uix:TargetAnchorable CvElementArea="427, 96, 80, 29" CvTextArea="435, 101, 56, 16" CvTextArgument="Broker" CvType="Button" DesignTimeRectangle="427, 96, 80, 29" DesignTimeScaleFactor="1.25" ElementType="Button" Guid="5bbd712e-11f4-425e-84c1-15af88df0aa9" InformativeScreenshot="c1d68a29df49c8f808d01016dbe238da.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1040 [EHQEARH ANDERSON, JACK] - [Input Scree*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
                         </uix:NClick.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1807,10 +1809,10 @@
                       </uix:NClick>
                       <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Payer's name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="487.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_78" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="[out_CurrentRow(&quot;Div Name&quot;).ToString+ &quot;[k(Down)]&quot;]" Version="V3">
                         <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable CvElementArea="710, 285, 739, 38" CvType="InputBox" DesignTimeRectangle="712, 283, 737, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Payer's name'" Guid="4099c287-30eb-4248-868a-6a3639b48ad3" InformativeScreenshot="03ad6a67128efb0a3a6316b7061cb8b2.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvElementArea="710, 285, 739, 38" CvType="InputBox" DesignTimeRectangle="712, 283, 737, 39" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="4099c287-30eb-4248-868a-6a3639b48ad3" InformativeScreenshot="03ad6a67128efb0a3a6316b7061cb8b2.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArea="317, 288, 181, 32" CvTextArgument="Payer's name" CvType="Text" DesignTimeRectangle="317, 288, 181, 32" ElementType="Text" FriendlyName="'Payer's name'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CvTextArea="317, 288, 181, 32" CvTextArgument="Payer's name" CvType="Text" DesignTimeRectangle="317, 288, 181, 32" ElementType="Text" Guid="63fd5a79-d15d-4711-bb0e-d4e2b43aace9" SearchSteps="CV" TargetType="ComputerVisionBased" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
@@ -1824,11 +1826,11 @@
                       </uix:NTypeInto>
                       <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Interest income'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="487.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_80" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="46" Version="V3">
                         <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable CvElementArea="1607, 687, 235, 40" CvType="InputBox" DesignTimeRectangle="1607, 687, 235, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'msrdc.exe 2023'" Guid="4cd412a0-00b7-4ad4-8bed-6b32789a7deb" InformativeScreenshot="4406e81dd8d4067d53e33d813f8e3ca8.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvElementArea="1607, 687, 235, 40" CvType="InputBox" DesignTimeRectangle="1607, 687, 235, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="4cd412a0-00b7-4ad4-8bed-6b32789a7deb" InformativeScreenshot="4406e81dd8d4067d53e33d813f8e3ca8.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArea="317, 690, 560, 33" CvTextArgument="Interest income (including foreign source)" CvType="Text" DesignTimeRectangle="317, 690, 560, 34" ElementType="Text" FriendlyName="'Interest income'" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                                <uix:Target CvTextArea="710, 616, 748, 32" CvTextArgument="Interest, Dividend, and Sale Transaction Information" CvType="Text" DesignTimeRectangle="710, 616, 748, 32" ElementType="Text" FriendlyName="'Interest, Dividend,'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                <uix:Target CvTextArea="317, 690, 560, 33" CvTextArgument="Interest income (including foreign source)" CvType="Text" DesignTimeRectangle="317, 690, 560, 34" ElementType="Text" Guid="7be7e4f5-3b3b-499f-acaa-fc8ad93adc04" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                <uix:Target CvTextArea="710, 616, 748, 32" CvTextArgument="Interest, Dividend, and Sale Transaction Information" CvType="Text" DesignTimeRectangle="710, 616, 748, 32" ElementType="Text" Guid="7d0a6d0d-e114-4e3e-ab11-4467a007e772" SearchSteps="CV" TargetType="ComputerVisionBased" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
@@ -1854,10 +1856,10 @@
                               </sap:WorkflowViewStateService.ViewState>
                               <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'W2'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_87" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eaed97c0-89af-42b8-93af-3e0a0c24e4a8" Version="V3">
                                 <uix:NClick.Target>
-                                  <uix:TargetAnchorable CvTextArea="642, 101, 30, 16" CvTextArgument="W2" CvType="Text" DesignTimeRectangle="642, 101, 30, 16" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'W2'" Guid="96f3b704-d332-495f-8856-165d05d40b63" InformativeScreenshot="88167506c15d170ed75419d3473ce7a3.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable CvTextArea="642, 101, 30, 16" CvTextArgument="W2" CvType="Text" DesignTimeRectangle="642, 101, 30, 16" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="96f3b704-d332-495f-8856-165d05d40b63" InformativeScreenshot="88167506c15d170ed75419d3473ce7a3.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                        <uix:Target CvTextArea="558, 101, 56, 17" CvTextArgument="1099M" CvType="Text" DesignTimeRectangle="558, 101, 56, 17" ElementType="Text" FriendlyName="'1099M'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CvTextArea="558, 101, 56, 17" CvTextArgument="1099M" CvType="Text" DesignTimeRectangle="558, 101, 56, 17" ElementType="Text" Guid="cd7f7cfd-fec0-4de0-bb98-d99d6e95bbbd" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -1871,10 +1873,10 @@
                               </uix:NClick>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Employer's name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_83" ScopeIdentifier="eaed97c0-89af-42b8-93af-3e0a0c24e4a8" Text="[out_CurrentRow(&quot;W-2 Name&quot;).ToString+ &quot;[k(Down)]&quot;+ &quot;[k(Enter)]&quot;]" Version="V3">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable CvElementArea="776, 285, 733, 38" CvType="InputBox" DesignTimeRectangle="777, 285, 731, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Employer's name'" Guid="8845282b-f464-466c-a6d3-44cae6ca05f2" InformativeScreenshot="07a1500ea3a9ade64e0d69f0d305a603.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable CvElementArea="776, 285, 733, 38" CvType="InputBox" DesignTimeRectangle="777, 285, 731, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="8845282b-f464-466c-a6d3-44cae6ca05f2" InformativeScreenshot="07a1500ea3a9ade64e0d69f0d305a603.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                        <uix:Target CvTextArea="317, 288, 232, 32" CvTextArgument="Employer's name" CvType="Text" DesignTimeRectangle="317, 288, 232, 32" ElementType="Text" FriendlyName="'Employer's name'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CvTextArea="317, 288, 232, 32" CvTextArgument="Employer's name" CvType="Text" DesignTimeRectangle="317, 288, 232, 32" ElementType="Text" Guid="12359cd5-c60e-4510-939a-6d81170dd67f" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -1888,10 +1890,10 @@
                               </uix:NTypeInto>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Wages, tips'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_88" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="[&quot;44&quot; + &quot;[k(tab)]&quot;]" Version="V3">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable CvElementArea="1192, 727, 254, 40" CvType="InputBox" DesignTimeRectangle="1192, 727, 254, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Wages, tips'" Guid="58242eb0-c47e-43cb-bec6-bfe47b7fd86b" InformativeScreenshot="ac2677a9793b87bc5557a9d984fb52e5.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable CvElementArea="1192, 727, 254, 40" CvType="InputBox" DesignTimeRectangle="1192, 727, 254, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="58242eb0-c47e-43cb-bec6-bfe47b7fd86b" InformativeScreenshot="ac2677a9793b87bc5557a9d984fb52e5.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                        <uix:Target CvTextArea="1108, 698, 123, 25" CvTextArgument="Wages, tips" CvType="Text" DesignTimeRectangle="1108, 698, 123, 25" ElementType="Text" FriendlyName="'Wages, tips'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CvTextArea="1108, 698, 123, 25" CvTextArgument="Wages, tips" CvType="Text" DesignTimeRectangle="1108, 698, 123, 25" ElementType="Text" Guid="66cf0fc2-6601-44fc-beb1-4f9c37b4b0a7" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -1905,11 +1907,11 @@
                               </uix:NTypeInto>
                               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '2'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,243.2" sap2010:WorkflowViewState.IdRef="NTypeInto_89" ScopeIdentifier="f150c5a6-f30d-4238-a8cb-f099cda0df68" Text="[&quot;42&quot; + &quot;[k(tab)]&quot;]" Version="V3">
                                 <uix:NTypeInto.Target>
-                                  <uix:TargetAnchorable CvElementArea="1588, 727, 253, 40" CvType="InputBox" DesignTimeRectangle="1588, 727, 253, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'2'" Guid="f9af7d5f-06ba-4465-bcfd-22f82b7536d8" InformativeScreenshot="6b21cb06802e31dc003e0ae75f607313.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable CvElementArea="1588, 727, 253, 40" CvType="InputBox" DesignTimeRectangle="1588, 727, 253, 40" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="f9af7d5f-06ba-4465-bcfd-22f82b7536d8" InformativeScreenshot="6b21cb06802e31dc003e0ae75f607313.png" ScopeSelectorArgument="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2023 UltraTax CS  / 1041 [ULAB2145 TrustABC] (f9f3bb5e-86d1-4674*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                        <uix:Target CvTextArea="1483, 698, 16, 20" CvTextArgument="2" CvType="Text" DesignTimeRectangle="1483, 698, 16, 20" ElementType="Text" FriendlyName="'2'" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                                        <uix:Target CvTextArea="1526, 697, 92, 25" CvTextArgument="Fed W/H" CvType="Text" DesignTimeRectangle="1526, 698, 92, 23" ElementType="Text" FriendlyName="'Fed W/H'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                        <uix:Target CvTextArea="1483, 698, 16, 20" CvTextArgument="2" CvType="Text" DesignTimeRectangle="1483, 698, 16, 20" ElementType="Text" Guid="0ac1595d-8c17-4d6c-8a78-f7698df6e9e0" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                        <uix:Target CvTextArea="1526, 697, 92, 25" CvTextArgument="Fed W/H" CvType="Text" DesignTimeRectangle="1526, 698, 92, 23" ElementType="Text" Guid="37f65827-1a3a-45c3-8069-370c8c6916e8" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                       </scg:List>
                                     </uix:TargetAnchorable.Anchors>
                                   </uix:TargetAnchorable>
@@ -1955,7 +1957,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
     </Switch>
-    <ui:LogMessage DisplayName="Log Message (Proforma information)" sap:VirtualizedContainerService.HintSize="725.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Proforma details are entered.&quot;]">
+    <ui:LogMessage DisplayName="Log Message (Proforma information)" sap:VirtualizedContainerService.HintSize="512.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Proforma details are entered.&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1963,5 +1965,25 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: 2024 UltraTax CS  (f9f3bb5e-86d1-4674-bc37-ad9f4637dbdd)" sap:VirtualizedContainerService.HintSize="512.8,576" sap2010:WorkflowViewState.IdRef="NApplicationCard_50" ScopeGuid="999bd09f-55aa-490a-afcc-b3ffac61fc5f" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,261.6" sap2010:WorkflowViewState.IdRef="Sequence_371">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClosePopup PopupException="{x:Null}" PopupHandled="{x:Null}" DisplayName="Close Popup" sap:VirtualizedContainerService.HintSize="353.6,172.8" sap2010:WorkflowViewState.IdRef="NClosePopup_1" PreferredButtons="[New String(){&quot;Close&quot;,&quot;Cancel&quot;}]" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1920, 1020" FilePath="C:\Program Files\Remote Desktop\msrdc.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATISURBVFhHvZbrTxxlFMb57F9QKVDAP8D6QaOJaRMTA020xo9oYjQmRgVba7W2tRQWWFig0IKlAVODCC0gLPf7bQvbhZY7CwItFOguUrpcWyh3eHzfMzM77w6LlJR6kl/O+5xzZs7Dsju7Hjz8Y2/DP9YiI54VrUXb12ZxRjtvAS1Vwt9gBicotRWmnn/wt20O7fcdSCjpp7qWkIxOWEdncCqzy23/eZHXe3j4xTThaKIFswsrWFxeQ3P/JAZss+CRXncfvO8f3QQ/xhtxZoxPLVIvtqCXarxPmeEvnKnOr3VT47DVkgm/6EakVQ/STeMK+U0bCZtjgVA0p7rDjrWNTZo1FFjVnv6Wy5xb9K5aNgAPfvHHvzYjxtiDd+KZO72JeOh4CvsUMyDrizldWGfLi1pGJQNGZkDu7Z1bgoGoBnB85cxJLu2jJUXNI6SPxDdi+skyTN3j0OV2Uc/ADCvzCuI9dsNpwDeyHiKXCnuwur6JBxPzOBxtolpL/wQezz3DWwYTdDmdkoH8bpfr9oIfQzUQUQeF9NoBbGxu4Z59Fkfj2HJW0+V00MKW/kfIaxpCY4+dtLl3HOGsJ16/F1QDulpwMuoGsLm1hbbBRzgcxYZ0NVS/Vt6HpdUNJytrG2RgmeXKtjGakeDzCqJ216tVDRwKr0HI9WZ6gznml5BUYnWiz+vEofBq+AjostvIQJyxi3rPg68brRoIq4LZKr2s2nCw/zvvi+hutlIvzsjMaXp7QTVwsRIfJTTg85TGbQQlm8D7Im9GVVPvbX3Ntp6WoCQTrCMOHDHUufbCKgUDoRWsyOB5nwlJbaJX69iletI+oeXOntOAz4VySJSphApnt5rN85pSF8+M+Px2DIxNYYE92nksra5jZGIO1yutzjnVwC+lrMDgWUHU/KzgribCevWd0pNyp+gemsRrzIRgoIRduAvnNVmLXL9sbKcl7NOMqrvDCM2wkP7sqgmF5kF6xvC4UdunGvA+XwyOj5yVs6h36mtrHfcmaEHvg0nSIdcaSB+LrSJt7nlIenh8RjBwrgiuFGrOohb7YpbO/ez/zqO510Y6JKWedKChknSgvpxqX1wRHkTeZwvgfZbdgPKLUdM6TAtX2VMyPvcOW1ZHOjCmYtusauBnI/aLD6PLMD3/jJbymJLPCfl38foF9moJs04DXmfysZ98oC9FS99DrK1L3xlKLK2swWIdw3Fmks+pBn7Kw8vgfV0xsmt7aPn84jJlHvz85WXhUez141+QyBXyTuzW56gzwclVtDQwqgTxORbMLSyRHhh9rBo4eDoXHK/TOS4c3OGsaG2f86qMop0GIotJpxTcIc2/0lUDP2RjP3gvrIBuzkOf2Ui14KRK0gGRRaSvGltIr7L3h2rg1E3sF/bJOVrA8/HIAmaggnRARCE+jS3B5MxT0kM2h2Dg+xuQyJKzcha1u77Yk2oRfzTQDxseK/wLaHyazsP2Keengv/1Z1JrVAOeJzPheTKLwfOLE5Fej4mpJ7RMG7bJWZxLq2FzWaKBP+F5Yg+4m3dT+/ZKGXJrpZ/wv5e14qvEUmfvwDe/qQZ4eH6XAScnZMSzWNPO/Mc1wYklZCAgLM85e+DrNLzy7ieuBuQQi/8nLuFu4CXi4fEv8zWTvOm0AXIAAAAASUVORK5CYII=" InformativeScreenshot="66229dc2b861a30f947c0b3b8f038750.png" Selector="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2024 UltraTax CS  (f9f3bb5e-86d1-4674-bc37-ad9f4637dbdd)' /&gt;" Title="2024 UltraTax CS  (f9f3bb5e-86d1-4674-bc37-ad9f4637dbdd)" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
