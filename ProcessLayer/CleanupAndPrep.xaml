@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1408.8,6126.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1409,6059</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>CleanupAndPrep_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -123,20 +123,20 @@
       <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="376,571" Id="CleanupAndPrep_1" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
-  <Sequence sap2010:Annotation.AnnotationText="This workflow runs only once per process execution. You can prepare your application environment. " DisplayName="CleanupAndPrep" sap:VirtualizedContainerService.HintSize="750.4,6061.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This workflow runs only once per process execution. You can prepare your application environment. " DisplayName="CleanupAndPrep" sap:VirtualizedContainerService.HintSize="750,5994" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="688,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Killing all applications in environment&quot;]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Start from a clean environment" ContinueOnError="True" DisplayName="Invoke KillAllProcesses workflow" sap:VirtualizedContainerService.HintSize="688,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ProcessLayer\KillAllProcesses.xaml">
+    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="688,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Killing all applications in environment&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Start from a clean environment" ContinueOnError="True" DisplayName="Invoke KillAllProcesses workflow" sap:VirtualizedContainerService.HintSize="688,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ProcessLayer\KillAllProcesses.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_Ultraexe">utw23.exe</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Ultraexe">utw24.exe</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_Lacerteexe">w23tax.exe</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <Sequence sap2010:Annotation.AnnotationText="This workflow runs only once per process execution. You can prepare your application environment. " DisplayName="CleanupAndPrep" sap:VirtualizedContainerService.HintSize="688,5592" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap2010:Annotation.AnnotationText="This workflow runs only once per process execution. You can prepare your application environment. " DisplayName="CleanupAndPrep" sap:VirtualizedContainerService.HintSize="688,5529" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="str_ClientCreation_Queue" />
         <Variable x:TypeArguments="x:String" Name="str_BinderCreation_Queue" />
@@ -150,8 +150,8 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="625.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Killing all applications in environment&quot;]" />
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Start from a clean environment" ContinueOnError="True" DisplayName="Invoke KillAllProcesses workflow" sap:VirtualizedContainerService.HintSize="625.6,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ProcessLayer\KillAllProcesses.xaml">
+      <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="626,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Killing all applications in environment&quot;]" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" sap2010:Annotation.AnnotationText="Start from a clean environment" ContinueOnError="True" DisplayName="Invoke KillAllProcesses workflow" sap:VirtualizedContainerService.HintSize="626,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ProcessLayer\KillAllProcesses.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="in_Ultraexe">utw23.exe</InArgument>
           <InArgument x:TypeArguments="x:String" x:Key="in_Lacerteexe">w23tax.exe</InArgument>
@@ -162,7 +162,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
-      <Assign DisplayName="Queue Foder" sap:VirtualizedContainerService.HintSize="625.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign DisplayName="Queue Foder" sap:VirtualizedContainerService.HintSize="626,114" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[str_Orchestrator_Queue_Folder]</OutArgument>
         </Assign.To>
@@ -170,7 +170,7 @@
           <InArgument x:TypeArguments="x:String">[in_Config("OrchestratorQueueFolder").ToString]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign DisplayName="Client Creation Queue" sap:VirtualizedContainerService.HintSize="625.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign DisplayName="Client Creation Queue" sap:VirtualizedContainerService.HintSize="626,114" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[str_ClientCreation_Queue]</OutArgument>
         </Assign.To>
@@ -178,7 +178,7 @@
           <InArgument x:TypeArguments="x:String">[in_Config("Orchestrator_QName_ClientCreation").ToString]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign DisplayName="Binder Creation Queue" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign DisplayName="Binder Creation Queue" sap:VirtualizedContainerService.HintSize="626,114" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[str_BinderCreation_Queue]</OutArgument>
         </Assign.To>
@@ -186,14 +186,14 @@
           <InArgument x:TypeArguments="x:String">[in_Config("Orchestrator_QName_BinderCreation").ToString]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" ContinueOnError="False" DisplayName="Get Client Creation Queue Items" FilterStrategy="Equals" FolderPath="[str_Orchestrator_Queue_Folder]" sap:VirtualizedContainerService.HintSize="625.6,175.2" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="New" QueueName="[str_ClientCreation_Queue]" Result="[clientQueueCollection]" />
-      <ui:ForEach x:TypeArguments="ui:QueueItem" CurrentIndex="{x:Null}" DisplayName="For Each client queue" sap:VirtualizedContainerService.HintSize="625.6,977.6" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[clientQueueCollection]">
+      <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" ContinueOnError="False" DisplayName="Get Client Creation Queue Items" FilterStrategy="Equals" FolderPath="[str_Orchestrator_Queue_Folder]" sap:VirtualizedContainerService.HintSize="626,175" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="New" QueueName="[str_ClientCreation_Queue]" Result="[clientQueueCollection]" />
+      <ui:ForEach x:TypeArguments="ui:QueueItem" CurrentIndex="{x:Null}" DisplayName="For Each client queue" sap:VirtualizedContainerService.HintSize="626,887" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[clientQueueCollection]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="ui:QueueItem">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:QueueItem" Name="clientitem" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="377.6,831.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,741" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
                 <Variable x:TypeArguments="ui:QueueItem" Name="transactionQueItem" />
               </Sequence.Variables>
@@ -202,7 +202,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" FolderPath="[str_Orchestrator_Queue_Folder]" sap:VirtualizedContainerService.HintSize="334.4,143.2" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="[str_ClientCreation_Queue]" TransactionItem="[transactionQueItem]" />
+              <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" FolderPath="[str_Orchestrator_Queue_Folder]" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="[str_ClientCreation_Queue]" TransactionItem="[transactionQueItem]" />
               <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
               <ui:SetTransactionStatus ContinueOnError="{x:Null}" ServiceBaseAddress="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" FolderPath="[str_Orchestrator_Queue_Folder]" sap:VirtualizedContainerService.HintSize="334.4,245.6" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_1" Reason="Invalid Queue" Status="Failed" TimeoutMS="60000" TransactionItem="[transactionQueItem]">
                 <ui:SetTransactionStatus.Analytics>

@@ -134,7 +134,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="GoSystem" sap:VirtualizedContainerService.HintSize="1468.8,589.6" sap2010:WorkflowViewState.IdRef="Flowchart_2">
+  <Flowchart DisplayName="GoSystem" sap:VirtualizedContainerService.HintSize="1468.8,563.2" sap2010:WorkflowViewState.IdRef="Flowchart_2">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="Out_Exception" />
     </Flowchart.Variables>
@@ -158,13 +158,13 @@
           <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: GoSystem Tax RS" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" ScopeGuid="d7098346-0313-4378-92e0-6ced79be39ed" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: GoSystem Tax RS" sap:VirtualizedContainerService.HintSize="1094.4,3612.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" ScopeGuid="d7098346-0313-4378-92e0-6ced79be39ed" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1060.8,4863.2" sap2010:WorkflowViewState.IdRef="Sequence_135">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1060.8,3396" sap2010:WorkflowViewState.IdRef="Sequence_135">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="Exist_FailedMessage" />
               </Sequence.Variables>
@@ -174,7 +174,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message navigation" sap:VirtualizedContainerService.HintSize="998.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_127" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Navigating to Create Return&quot;]">
+              <ui:LogMessage DisplayName="Log Message navigation" sap:VirtualizedContainerService.HintSize="998.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_127" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Navigating to Create Return&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -182,7 +182,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <TryCatch DisplayName="Try Catch - Navigate to Create Tab" sap:VirtualizedContainerService.HintSize="998.4,874.4" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+              <TryCatch DisplayName="Try Catch - Navigate to Create Tab" sap:VirtualizedContainerService.HintSize="998.4,516.8" sap2010:WorkflowViewState.IdRef="TryCatch_12">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -190,14 +190,14 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <TryCatch.Try>
-                  <Sequence DisplayName="Navigate to Create Tab" sap:VirtualizedContainerService.HintSize="449.6,612" sap2010:WorkflowViewState.IdRef="Sequence_137">
+                  <Sequence DisplayName="Navigate to Create Tab" sap:VirtualizedContainerService.HintSize="416,253.6" sap2010:WorkflowViewState.IdRef="Sequence_137">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Returns'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_49" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Returns'" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_49" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://gosystemrs.fasttax.com/TopMenu.asp" CvType="Text" DesignTimeRectangle="98, 226, 76, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='FRAME' name='ATopMenu' /&gt;&lt;webctrl tag='A' innertext='Returns' /&gt;" Guid="2a55a630-20a7-4354-89d3-b930fe6f386f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAM/SURBVGhD7Zctl6swEIb5F5FIZCUSiUQikUgkPyESiURGIpGRSGQlEolEvncSoC392IUN9664ec7hnG22CeRhZjJ1YDHCCjTECjTECjTECjTECjTECjTECjTECjTECjTECjTECjTECjTECjRkv8BBIHIcOG8vF36UopTD8uVjDLIAr38297c5LDDIa0gpN1cjCiQBI5EMaTMuE/bSgtO6kfhPBH7c6NQiv1A0BhX6ZWgfVuCNNlfpzEnJnfEqkIUeGM11mIcwLdGuQfpSFiKo5QcRvayj2I4PEBHN4Q3aIoRL810/h5zW8RZjS5nhu3pt5oXIxBWTnrswtiiSAB5T92bwggTFwTJ0osAeVUAPcinQLSNDndDGGIKkRK3SvS7nVGcxhApT2mwnaYzWnUtDh4F2eEggY3BDTus3EIKkreO+D9+NwEUD2QjwSIlkyOWikDKGU8awMENVq1JUo0z87Xd2cI7AqYfkoY6ysFoSeJLI6c2G5XX+fINEh/TguVyi4TWFDwl0UjSb/a7jFM2bWkL3UZFGkTl/5G++c0UZ0IFYPN/5M4cF3tPt6aL0jMuOImChzWncQ1ZtDxx1lYmas4owFBgJ+uuR+/i2Fj99v68Q0n39tELb74+4Zw4LfDyFG8ERuQ68uLjXtYV5s0rUpyvG3Ln8PYFfj0/oykjXTv08ro+I6nPdbWd9h3kK9wKxSg2fNvbwIufNzofC1/yWwAVVh+sK2e0woaikNN8bk6fUwInqiU//Y/E9bSaZ6YfJvi3InwRSbXuK6o6rXvNkgRtGyPzy9t6fOOcQoffV8vkEi9dfFMshoh54W4t6vRE3rKhkK14Fjk1Ka11QrMe5Yu0zTxLYi4RO6QT1k6hrGfyGQGLdILUoq8NexPpkZgG1Cg3VTZUqup3wwW/53qFQ83QrMrcxZBCpLgsJStVi6PbHRRyfmMJDrUsPU72fanVUG1SQVHpen3f/NoVXJjp5L0pY2txO47Etka6NtP7NnEFct6+3bzKEdBipCKZn10wPDfitCdatx4kp3DfgD7Vvvc/O4NPsF2h5ixVoiBVoiBVoiBVoiBVoiBVoiBVoiBVoiBVoiBVoiBVoiBVoBPAHYr4xM0S0pG4AAAAASUVORK5CYII=" InformativeScreenshot="e2eefc0d82f83712eab07bf05a9c697c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GoSystem Tax RS' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                           <uix:TargetAnchorable.Anchors>
@@ -208,8 +208,14 @@
                           </uix:TargetAnchorable.Anchors>
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Create" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_50" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Create" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_50" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://gosystemrs.fasttax.com/GoSystemClient/#!/returnlist" CvElementArea="28, 326, 121, 55" CvTextArea="76, 344, 53, 16" CvType="Button" DesignTimeRectangle="28, 327, 122, 53" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl name='main' /&gt;&lt;webctrl tag='A' aaname='Create' /&gt;" Guid="b52e6e8e-c429-4083-9d55-a042f6710c8f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH4AAAA5CAYAAADwfp9cAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOrSURBVHhe7ZqtkqswFIDv0+1z9B2i0RjMNRgMBlONwdRgMDVMZ2IwGAwGExNzboCE37DL7rSwt+ecmW9ml4YA/cLJIfSPlBJaKHAFiUcaJB5pDOIvlwvx5nx8fAx/k3hEkHikkHikkHikkHikkHikkHikkHikkHikkHikkHikkHikkHikkHiknCOeuRClHKpGwOztvxTQVBzSyAVm2494GgeLZ+AnHOodv/WQNYfEZ5Y+iGdwoHgGEW+01r3RAI9I/is4TLyXVvO0vjdkBaln75P4OceId1OotMdlVOnYTo0Ne1QpuNP+foITQsorEIvRJ0UD+dXS/s05RHyQb6f4XeJVys+DeZ/fwlMDrxUuayjSK3hOv90JYrhXtZpOFu0RcID4ELjo9dlin3gAwcNJn9+ARf3xf8uU0V2kOH2wHSB+neabIoMs64knd3IQj9uLZZJQ6X7e7z7crO52L287isRBSgS5fvQwA9NLcqgm84QUFWThtE8HwqyEZjqXCJVNEm9oE63ugMkAYCFkZaO2mBBQ8wS8of/n8nrxIZ9cTB/Tu3yL1d0vOISWdp/DdD8lJNbPF2jxpRJgoj1XFq2voQup+mV6Xz9XE5ItGrj7fZtt8Z46z0XxoaPJg/H8nsjrxVu+kOPE6zTf5OBbP19gDipVTRGbRSQXuqShpoosMNsYuHHRDYbxWhzwfA8c01fb5lZ2TzKz69WDa5bqr0XXTvB4qD8uTtAf90fX/TVvnuq1+DrbtxKoxc/vMt3HRgge9e2YD7dysRKp40vxq1E+DVWbmHZP5M2LOx+6Bwp110TWzxd0JyChiKfb94nf++SCSPy5j3PXor0Hd+5vk2IGT33/ZC1Bt2nnfHdS8Ona4EvxSdnuvBhwr+UQ8acu4AS6xlDp3jeF2BZW8aYok8r9uAbQvmj6e40hctv/TWYpIO7Eq/k9uA3T1Vq8hDJxxm1Mfz9q/9tQR1zA8UKIr/9rcac5c8nWU0VWl63VI9g9DsA1A8DxIIwTLU+xIb4buBsnb6T2mWUeUvRz/lq8ifFY64pfx/9b3BnOfUnD/Bju7XPyws9syXZLfLd/AryeyJECqjwZswgbn/3bEFUGoS3Vz9qpY4fms3YdYL6kLJoSsnCSGZ7IgeJb6LXsb+Fg8Rr6IcbpnCOeOB0SjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxQSjxSr+MfjQaDhAf8Asif25UkLvg4AAAAASUVORK5CYII=" InformativeScreenshot="c964d09c954c5b6c48b782e9b4f237a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GoSystem Tax RS' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                           <uix:TargetAnchorable.Anchors>
@@ -220,12 +226,25 @@
                           </uix:TargetAnchorable.Anchors>
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_128" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Navigate to click.&quot;]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,49.6" sap2010:WorkflowViewState.IdRef="LogMessage_128" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Navigate to click.&quot;]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:LogMessage>
                   </Sequence>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="452.8,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="419.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -241,7 +260,7 @@
                   </Catch>
                 </TryCatch.Catches>
               </TryCatch>
-              <TryCatch DisplayName="Try Catch - Input Year" sap:VirtualizedContainerService.HintSize="998.4,688" sap2010:WorkflowViewState.IdRef="TryCatch_13">
+              <TryCatch DisplayName="Try Catch - Input Year" sap:VirtualizedContainerService.HintSize="998.4,460" sap2010:WorkflowViewState.IdRef="TryCatch_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -249,14 +268,14 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <TryCatch.Try>
-                  <Sequence DisplayName="Input Year" sap:VirtualizedContainerService.HintSize="449.6,456.8" sap2010:WorkflowViewState.IdRef="Sequence_138">
+                  <Sequence DisplayName="Input Year" sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="Sequence_138">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NSelectItem DisplayName="Select Item Year" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_24" Item="[in_CurrentRow(&quot;Year&quot;).ToString]" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
+                    <uix:NSelectItem DisplayName="Select Item Year" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="NSelectItem_24" Item="[in_CurrentRow(&quot;Year&quot;).ToString]" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
                       <uix:NSelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="10">
                           <x:String>2022</x:String>
@@ -280,12 +299,25 @@
                           </uix:TargetAnchorable.Anchors>
                         </uix:TargetAnchorable>
                       </uix:NSelectItem.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </uix:NSelectItem>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_129" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Year &quot; +in_CurrentRow(&quot;Year&quot;).ToString+ &quot; entered&quot;]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,49.6" sap2010:WorkflowViewState.IdRef="LogMessage_129" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Year &quot; +in_CurrentRow(&quot;Year&quot;).ToString+ &quot; entered&quot;]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:LogMessage>
                   </Sequence>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="452.8,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_13">
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="419.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -361,15 +393,15 @@
                   </Catch>
                 </TryCatch.Catches>
               </TryCatch>
-              <ui:IfElseIf DisplayName="Else If 1040 and 1041" sap:VirtualizedContainerService.HintSize="998.4,1764.8" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+              <ui:IfElseIf DisplayName="Else If 1040 and 1041" sap:VirtualizedContainerService.HintSize="998.4,795.2" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
                 <ui:IfElseIf.ConditionBlocks>
                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                     <ui:IfElseIfBlock BlockType="If" Condition="[Cint(in_CurrentRow(&quot;Type&quot;).ToString)=1040]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
                       <ui:IfElseIfBlock.Then>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,986.4" sap2010:WorkflowViewState.IdRef="Sequence_142">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_142">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -390,7 +422,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_131" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The client name &quot;+in_CurrentRow(&quot;FirstName&quot;).ToString+&quot; entered.&quot;]" />
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_131" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The client name &quot;+in_CurrentRow(&quot;FirstName&quot;).ToString+&quot; entered.&quot;]" />
                           <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Taxpayer Last Name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_109" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Text="[in_CurrentRow(&quot;LastName&quot;).ToString]" Version="V3">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="https://gosystemrs.fasttax.com/GoSystemClient/#!/createReturn" CvType="InputBox" DesignTimeRectangle="422, 584, 294, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='FRAME' name='main' /&gt;&lt;webctrl tag='INPUT' name='tpLastName' type='text' /&gt;" Guid="249d3d91-6d56-4430-b2b6-67b79feb61bf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASoAAAAqCAYAAAAETRabAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE3SURBVHhe7dc7ioVAAETR2f/azDU1dANGQg81PMQnTKoVnAMV+Ikv3T8DoJxQAfWECqj3Fap938e6rmNZljFNk5nZY0t30p906O4MVT7O8zy2bRvHcXzeAjwj3Ul/0qF7rM5QpWT5CeBN6VB6dHWGKscuJyngbelQenR1hip3RIAG9x4JFVBHqIB6QgXUEyqgnlAB9YQKqCdUQD2hAuoJFVBPqIB6QgXUEyqgnlAB9YQKqCdUQD2hAuoJFVBPqIB6QgXUEyqgnlAB9YQKqCdUQD2hAuoJFVBPqIB6QgXUEyqgnlAB9f4N1bIs4ziOzxPAO9Kh9OjqDNW6rmPbts8TwDvSofTo6gzVvu9jnue/n5ysgKelO+lPOpQeXZ2hinxMyXLsyh3RzOyppTvpzz1S8RUqgD5j/AL5ZVOyAQbTCQAAAABJRU5ErkJggg==" InformativeScreenshot="cf1a8fcc082d77755f8683f26df5ba71.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GoSystem Tax RS' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
@@ -409,8 +441,8 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_132" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The client last name &quot;+in_CurrentRow(&quot;LastName&quot;).ToString+&quot; entered.&quot;]" />
-                          <If Condition="[in_CurrentRow(&quot;Filing Status&quot;).ToString.ToLower.Contains(&quot;married&quot;)]" DisplayName="If married" sap:VirtualizedContainerService.HintSize="449.6,932.8" sap2010:WorkflowViewState.IdRef="If_22">
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_132" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The client last name &quot;+in_CurrentRow(&quot;LastName&quot;).ToString+&quot; entered.&quot;]" />
+                          <If Condition="[in_CurrentRow(&quot;Filing Status&quot;).ToString.ToLower.Contains(&quot;married&quot;)]" DisplayName="If married" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="If_22">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -418,7 +450,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="416,713.6" sap2010:WorkflowViewState.IdRef="Sequence_140">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,715.2" sap2010:WorkflowViewState.IdRef="Sequence_140">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -435,7 +467,7 @@
                                     </uix:TargetAnchorable>
                                   </uix:NTypeInto.Target>
                                 </uix:NTypeInto>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_133" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The Spouse name &quot;+in_CurrentRow(&quot;Spouse FirstName&quot;).ToString +&quot; entered.&quot;]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_133" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The Spouse name &quot;+in_CurrentRow(&quot;Spouse FirstName&quot;).ToString +&quot; entered.&quot;]" />
                                 <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Last'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_111" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Text="[in_CurrentRow(&quot;Spouse Last Name&quot;).ToString]" Version="V3">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="https://gosystemrs.fasttax.com/GoSystemClient/#!/createReturn" CvType="InputBox" DesignTimeRectangle="422, 672, 294, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='FRAME' name='main' /&gt;&lt;webctrl tag='INPUT' name='spLastName' type='text' /&gt;" Guid="e6d9bf40-10c8-4198-b924-876e2a3e6969" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASoAAAAqCAYAAAAETRabAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE3SURBVHhe7dc7ioVAAETR2f/azDU1dANGQg81PMQnTKoVnAMV+Ikv3T8DoJxQAfWECqj3Fap938e6rmNZljFNk5nZY0t30p906O4MVT7O8zy2bRvHcXzeAjwj3Ul/0qF7rM5QpWT5CeBN6VB6dHWGKscuJyngbelQenR1hip3RIAG9x4JFVBHqIB6QgXUEyqgnlAB9YQKqCdUQD2hAuoJFVBPqIB6QgXUEyqgnlAB9YQKqCdUQD2hAuoJFVBPqIB6QgXUEyqgnlAB9YQKqCdUQD2hAuoJFVBPqIB6QgXUEyqg3r+hWpZlHMfxeQJ4RzqUHl2doVrXdWzb9nkCeEc6lB5dnaHa933M8/z3k5MV8LR0J/1Jh9KjqzNUkY8pWY5duSOamT21dCf9uUcqvkIF0EiogHJj/ALMolTk+d+asAAAAABJRU5ErkJggg==" InformativeScreenshot="2fe7a832bd4b9a816ea2c2a43ba8bf9f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GoSystem Tax RS' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
@@ -458,7 +490,7 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="300,81" sap2010:WorkflowViewState.IdRef="Sequence_141">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="300,81" sap2010:WorkflowViewState.IdRef="Sequence_141">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -472,14 +504,14 @@
                     </ui:IfElseIfBlock>
                     <ui:IfElseIfBlock BlockType="Else" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
                       <ui:IfElseIfBlock.Then>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,514.4" sap2010:WorkflowViewState.IdRef="Sequence_143">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,506.4" sap2010:WorkflowViewState.IdRef="Sequence_143">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Trust\Estate Name*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_112" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Text="[in_CurrentRow(&quot;TrustName&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Trust\Estate Name*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_112" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Text="[in_CurrentRow(&quot;TrustName&quot;).ToString]" Version="V3">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="https://gosystemrs.fasttax.com/GoSystemClient/#!/createReturn" CvType="InputBox" DesignTimeRectangle="53, 584, 375, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='FRAME' name='main' /&gt;&lt;webctrl tag='DIV' class='form-group' visibleinnertext='Trust\Estate Name*' /&gt;&lt;webctrl tag='INPUT' name='entityname' type='text' /&gt;" Guid="319eef06-befb-4734-b509-6ca8b025b229" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXsAAAAqCAYAAABSm/vtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFFSURBVHhe7dg7ioVQAETB2f/azDU1dANGwh16eIoPZgPaVdCBn/h48WcA8HpiD1BA7AEKfMV+3/exrutYlmVM02RmZg9b+p2Op+d3V+zzYJ7nsW3bOI7jcxeAJ0m/0/H0/B78K/b5EuQFAJ4vPU/XT1fsc/R3ogd4h/Q8XT9dsc+/HgDe4951sQd4KbEHKCD2AAXEHqCA2AMUEHuAAmIPUEDsAQqIPUABsQcoIPYABcQeoIDYAxQQe4ACYg9QQOwBCog9QAGxBygg9gAFxB6ggNgDFBB7gAJiD1BA7AEKiD1AAbEHKCD2AAXEHqCA2AMU+Df2y7KM4zg+VwA8WXqerp+u2K/rOrZt+1wB8GTpebp+umK/7/uY5/nvBSd8gGdKv9Px9DxdP12xjzzIlyBH//zrMTOzZy39TsfvoY+v2APwRmP8AhMs55IGhtYUAAAAAElFTkSuQmCC" InformativeScreenshot="e23e1701b508a48992a7455d20e1466e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GoSystem Tax RS*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                                 <uix:TargetAnchorable.Anchors>
@@ -496,7 +528,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,144" sap2010:WorkflowViewState.IdRef="LogMessage_135" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The Trust &quot;+in_CurrentRow(&quot;TrustName&quot;).ToString+&quot; name entered.&quot;]" />
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,167.2" sap2010:WorkflowViewState.IdRef="LogMessage_135" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;The Trust &quot;+in_CurrentRow(&quot;TrustName&quot;).ToString+&quot; name entered.&quot;]" />
                         </Sequence>
                       </ui:IfElseIfBlock.Then>
                     </ui:IfElseIfBlock>
@@ -509,7 +541,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:IfElseIf>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Other Return Info" sap:VirtualizedContainerService.HintSize="998.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Other Return Info" sap:VirtualizedContainerService.HintSize="998.4,189.6" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://gosystemrs.fasttax.com/GoSystemClient/#!/createReturn" CvType="Text" DesignTimeRectangle="75, 684, 135, 20" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='FRAME' name='main' /&gt;&lt;webctrl tag='SPAN' innertext='Other Return Info' /&gt;" Guid="6aca7759-1c8a-4f87-bccc-905960e38594" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIsAAAAYCAYAAADK6w4SAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUISURBVGhD7Vktt6s6EH1/siIGg0FgMBgMogaDqahBYxAYDOaIGEwNpgJTU1PTv7DfJIESvg7p7Xl33ftWxF7rdJgkM5OdmUzOP8/nExYWJrBksTCGJYuFMSxZLIxhyWJhDEsWC2NskqVrSqSRB4cdcDgcwBwPUZKDdyv6Hcc5rdC9ZA1ONOZwaqZ6vwFdGUp7V8FcBHG27sMu7mjLI/Jm7dvvxgfxvV+QRS6YjAlDyh/reitYIUuH+ujK4LIgQV5xcM5R5QlCh8kFovI6GdOcaOGw/IPI4iHt7R5RozzH8AT5WYz6tj5+E12JkHw6/eVk6YqA4uPiWNQyLu0bcZiR5UEbL4jiIqk7TT7ghq9EfGdIvu4v+Z9HlhDlRva48xQO2eblU8Lv4n9CFrlXhxOalW97mJLlWsAnI9zzZaI0xQVnlxZ0z7hQFipDsfiIsBQkG5zhuNZpn5EoU7kRzvw2m0+k9wT+oOP4iDOOm6ajCHBC3Zzhy8zgItXIqmOPLM8nRypt0wO9Y0NzkvIRIti974sNm8tVLMKCo4wdSv8MTlCgHeRlO117NUZzLMkyxIjf6EowlBnmwE9KtHdtjA7tgHc8Q+wL+/pxolzPss6ELNfco0k85Nep0hzKMAfny4PuNhx5RAt4KSpKa00namBvGGNgXoxMlIS6wNETAfFRvObvUEUkYx5tTiXTYpWpUsF0R+R6NBcLcKK56rJcODJglyzXHB7Z5rwOhIENtxa8SuW4KBclrSUivUcWRrFwjwVqXlFpb19yx6WNHWJU0YYtYrSGLbK4cF2GIC1pHSq7aSA3nyVfeFBVaMk3uVeHCDn9zZuO5Gqs0HOjTO5hXaYI5KGcxnFCFp6KiQxSVH/SwlKdgM0yxBJ8SVb36DNXUKgS9/hKyEgfWavpSL2c9ESpU5cvFYgDjvV6NtHxHVkeV45ToDZjOBCmNizL0HtkOXgZZRNdr5c7Kbgeo34dlaE1+QRbZBEZbDquOQl/xz1dlKFbhYjGOSnHfZAJ3Gsk4sBIoimZRpbeSROyzBzaJAsZMBk3c1KS0zmiECyfIJcODHrfEWCOIWhbYE6IrBlJZ2rDx2RZ6JnFaB1LHeV3gGIWo3ns5mS51zH9Xq8ml7ND3+jAP9RvjSwPurxOJ9oEZRaRtnYzy1aApHwg5zegOcW94X2y6N3QkI4dhOfpXegdG/4zshjLdSx1tmK0Rxb1fSSEjvnYD+8s6vdHZJmMW8dWINawpSvksi7T2mO6NbfBkmVGluFO4ZARQ51a4orcpwUd0Q0p2a+RZchk64bq2ArEGrZ172SnavvH+4C5DZtkietprRc+isvhy3eTWJjIdSx1tvyey+dk2S9DdKfqf0/Jor2zHKu1d4hP31mmcnW5XF7Knl1BG8PgF6Jr+CmyEO60vmj7tVu+qQ1LstxRxzSXdmgEhnec0XezWOzLdSx1fpUsuxfc43gYZmQReP8FVzHQl23tpHXeDYQ4nWpOT7aVah3ZtrnkUN8l/BhZCMNmjq25mQ0ieLEIapyTjmidn7jRqdRbTtVyhwj/ojI06Oh+GLXOOlb/N0T9e7O2CR2x0BcBJz3pwDuBuIFTkIdHKfn/m9dDksJPkkVkBJ4KcjPE9fD4tW+DGHfJwj4eNL9859Ef8xgcP0HZinKn+/guKbbkOpY6n5BF6s0f5ZICzXePchYW38GSxcIYliwWxrBksTCGJYuFIZ74F8H0xt6FnYaoAAAAAElFTkSuQmCC" InformativeScreenshot="21f95870084b33c6d371cc89bab8cf54.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GoSystem Tax RS' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                     <uix:TargetAnchorable.Anchors>
@@ -526,7 +558,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="[NEmptyFieldMode.SingleLine]" sap:VirtualizedContainerService.HintSize="998.4,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_113" IsPassword="True" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="[NEmptyFieldMode.SingleLine]" sap:VirtualizedContainerService.HintSize="998.4,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_113" IsPassword="True" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://gosystemrs.fasttax.com/GoSystemClient/#!/createReturn" CvType="InputBox" DesignTimeRectangle="53, 769, 281, 38" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='FRAME' name='main' /&gt;&lt;webctrl tag='INPUT' name='txtPassword' /&gt;" Guid="9946e81e-d59b-4a71-9a4c-983e58e5d0d3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAR0AAAAqCAYAAACOYo/aAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE1SURBVHhe7dc7joNAAETBvf/ZnENKyAWIkGbVK4Ow5MiLO6qSOuATP838DIAi0QGqRAeoeonOtm1jWZYxz/N4PB5mZh8vHUlP0pWrMzr5ME3TWNd17Pv+fAvwmXQkPUlXruE5o5Mi5QeAO6Ur6cvhjE6OQk44wN3SlfTlcEYndzCAb7j2RXSArxMdoEp0gCrRAapEB6gSHaBKdIAq0QGqRAeoEh2gSnSAKtEBqkQHqBIdoEp0gCrRAapEB6gSHaBKdIAq0QGqRAeoEh2gSnSAKtEBqkQHqBIdoEp0gCrRAapEB6h6G515nse+788ngHukK+nL4YzOsixjXdfnE8A90pX05XBGZ9u2MU3T3w9OPMB/pSPpSbqSvhzO6EQ+pEg5CuUOZmb26dKR9OQanHiJDsB3jfELmATiC8j1D18AAAAASUVORK5CYII=" InformativeScreenshot="58c28352e1a39d1170357def13d214eb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GoSystem Tax RS' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                     <uix:TargetAnchorable.Anchors>
@@ -548,8 +580,8 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="998.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_136" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Click Create create.&quot;]" />
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="7" DisplayName="Click Create" sap:VirtualizedContainerService.HintSize="998.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_52" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="998.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_136" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Click Create create.&quot;]" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="7" DisplayName="Click Create" sap:VirtualizedContainerService.HintSize="998.4,189.6" sap2010:WorkflowViewState.IdRef="NClick_52" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://gosystemrs.fasttax.com/GoSystemClient/#!/createReturn" CvElementArea="38, 982, 75, 40" CvTextArea="51, 994, 48, 15" CvType="Button" DesignTimeRectangle="40, 983, 72, 37" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='FRAME' name='main' /&gt;&lt;webctrl innertext='Create' type='button' /&gt;" Guid="9ad30a39-b251-400a-898c-5c84d0356861" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAApCAYAAACfrs/CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI4SURBVGhD7ZqxTsMwEEDZ2Vha/qDA3zDwN11YgYXAP0T8RtU/oIpUsZR2aBmqAktatTU5x05s59LkKkcIcie9Jbav9cvZ7XAngoMULIwYLIwYlrD1x0jMX27ELLgSb7enrWaaOAAX68WrspNGJgxkTe7OxeLhTHw9dcT3c7fVgANwAU7ixUhZMoTNw2s5AVvcZsAJuNGRCZsGl1xZCJ9BJ3FzoSwZwuDcYguYrnSjg4XVgIURYWFEWBgRFkaEhRFhYUQaE7ZZqmQ64qGIkXlNEEdhY5/lX9hgKPaQZBlaz1OBY7ExnjVBPFs1+nI8C+uLbZwkcGRVj/njbwmT1bUS2wEy5iA3thymEpPYz/rpmK5QHa5gdxxCzZE5szC+R1VOAn6FReNkdb1jpze3i4zncr0p3K3KUOzQNfmzQoVV5qThX1jN45AKs+XCPZdVmqayam2JrrDjcpbzuxVmyVVvHg13c8W5uDBKznr4FVb15owKLApLK6VQDRbpHBklx9TOWycnDb/CEuTfB/R+sO+O0go7dLdgFawu9IMVduR9heFdWPaL5HxJ939YUViCFJJvPpun18lxs4LzisvWuFKrchLxL0yC3B2OHFQYoDaYh72xdLN57CK3isokmnGcLKAhYf8XFkaEhRFhYURYGBEWRoSFEWFhRFgYERZGBBU2DXrcvYMA3Tvvjz1lyRDG/WE4pf1h0Jo4uecORE3WgZg4QTsQIUAa9HVCfyec2zYDfb4He1w56oQQP3R+HrBt3ZZfAAAAAElFTkSuQmCC" InformativeScreenshot="7edec2d6cf6642ee9ee8e75a3ab9ff1c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GoSystem Tax RS' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
                     <uix:TargetAnchorable.Anchors>
@@ -560,7 +592,7 @@
                   </uix:TargetAnchorable>
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NCheckState DisplayName="Check App State 'Return 3113VN'" sap:VirtualizedContainerService.HintSize="998.4,704" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
+              <uix:NCheckState DisplayName="Check App State 'Return 3113VN'" sap:VirtualizedContainerService.HintSize="998.4,688.8" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="d7098346-0313-4378-92e0-6ced79be39ed" Version="V3">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,445.6" sap2010:WorkflowViewState.IdRef="Sequence_136">
                     <Sequence.Variables>
