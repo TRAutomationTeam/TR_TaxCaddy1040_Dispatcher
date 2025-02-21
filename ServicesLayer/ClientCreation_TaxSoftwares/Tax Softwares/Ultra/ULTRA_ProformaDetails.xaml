@@ -3,7 +3,7 @@
     <x:Property Name="out_CurrentRow" Type="InArgument(sd:DataRow)" />
     <x:Property Name="out_ClientID" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1408.8,1100</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1408.8,596.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -132,13 +132,13 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="575.2,1035.2" sap2010:WorkflowViewState.IdRef="Sequence_339">
+  <Sequence sap:VirtualizedContainerService.HintSize="559.2,451.2" sap2010:WorkflowViewState.IdRef="Sequence_339">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[out_CurrentRow(&quot;Type&quot;).ToString]" sap:VirtualizedContainerService.HintSize="512.8,196" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[out_CurrentRow(&quot;Type&quot;).ToString]" sap:VirtualizedContainerService.HintSize="496.8,196.8" sap2010:WorkflowViewState.IdRef="Switch`1_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1957,7 +1957,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
     </Switch>
-    <ui:LogMessage DisplayName="Log Message (Proforma information)" sap:VirtualizedContainerService.HintSize="512.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Proforma details are entered.&quot;]">
+    <ui:LogMessage DisplayName="Log Message (Proforma information)" sap:VirtualizedContainerService.HintSize="496.8,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Proforma details are entered.&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1965,25 +1965,5 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: 2024 UltraTax CS  (f9f3bb5e-86d1-4674-bc37-ad9f4637dbdd)" sap:VirtualizedContainerService.HintSize="512.8,576" sap2010:WorkflowViewState.IdRef="NApplicationCard_50" ScopeGuid="999bd09f-55aa-490a-afcc-b3ffac61fc5f" Version="V2">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,261.6" sap2010:WorkflowViewState.IdRef="Sequence_371">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NClosePopup PopupException="{x:Null}" PopupHandled="{x:Null}" DisplayName="Close Popup" sap:VirtualizedContainerService.HintSize="353.6,172.8" sap2010:WorkflowViewState.IdRef="NClosePopup_1" PreferredButtons="[New String(){&quot;Close&quot;,&quot;Cancel&quot;}]" Version="V3" />
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 1920, 1020" FilePath="C:\Program Files\Remote Desktop\msrdc.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATISURBVFhHvZbrTxxlFMb57F9QKVDAP8D6QaOJaRMTA020xo9oYjQmRgVba7W2tRQWWFig0IKlAVODCC0gLPf7bQvbhZY7CwItFOguUrpcWyh3eHzfMzM77w6LlJR6kl/O+5xzZs7Dsju7Hjz8Y2/DP9YiI54VrUXb12ZxRjtvAS1Vwt9gBicotRWmnn/wt20O7fcdSCjpp7qWkIxOWEdncCqzy23/eZHXe3j4xTThaKIFswsrWFxeQ3P/JAZss+CRXncfvO8f3QQ/xhtxZoxPLVIvtqCXarxPmeEvnKnOr3VT47DVkgm/6EakVQ/STeMK+U0bCZtjgVA0p7rDjrWNTZo1FFjVnv6Wy5xb9K5aNgAPfvHHvzYjxtiDd+KZO72JeOh4CvsUMyDrizldWGfLi1pGJQNGZkDu7Z1bgoGoBnB85cxJLu2jJUXNI6SPxDdi+skyTN3j0OV2Uc/ADCvzCuI9dsNpwDeyHiKXCnuwur6JBxPzOBxtolpL/wQezz3DWwYTdDmdkoH8bpfr9oIfQzUQUQeF9NoBbGxu4Z59Fkfj2HJW0+V00MKW/kfIaxpCY4+dtLl3HOGsJ16/F1QDulpwMuoGsLm1hbbBRzgcxYZ0NVS/Vt6HpdUNJytrG2RgmeXKtjGakeDzCqJ216tVDRwKr0HI9WZ6gznml5BUYnWiz+vEofBq+AjostvIQJyxi3rPg68brRoIq4LZKr2s2nCw/zvvi+hutlIvzsjMaXp7QTVwsRIfJTTg85TGbQQlm8D7Im9GVVPvbX3Ntp6WoCQTrCMOHDHUufbCKgUDoRWsyOB5nwlJbaJX69iletI+oeXOntOAz4VySJSphApnt5rN85pSF8+M+Px2DIxNYYE92nksra5jZGIO1yutzjnVwC+lrMDgWUHU/KzgribCevWd0pNyp+gemsRrzIRgoIRduAvnNVmLXL9sbKcl7NOMqrvDCM2wkP7sqgmF5kF6xvC4UdunGvA+XwyOj5yVs6h36mtrHfcmaEHvg0nSIdcaSB+LrSJt7nlIenh8RjBwrgiuFGrOohb7YpbO/ez/zqO510Y6JKWedKChknSgvpxqX1wRHkTeZwvgfZbdgPKLUdM6TAtX2VMyPvcOW1ZHOjCmYtusauBnI/aLD6PLMD3/jJbymJLPCfl38foF9moJs04DXmfysZ98oC9FS99DrK1L3xlKLK2swWIdw3Fmks+pBn7Kw8vgfV0xsmt7aPn84jJlHvz85WXhUez141+QyBXyTuzW56gzwclVtDQwqgTxORbMLSyRHhh9rBo4eDoXHK/TOS4c3OGsaG2f86qMop0GIotJpxTcIc2/0lUDP2RjP3gvrIBuzkOf2Ui14KRK0gGRRaSvGltIr7L3h2rg1E3sF/bJOVrA8/HIAmaggnRARCE+jS3B5MxT0kM2h2Dg+xuQyJKzcha1u77Yk2oRfzTQDxseK/wLaHyazsP2Keengv/1Z1JrVAOeJzPheTKLwfOLE5Fej4mpJ7RMG7bJWZxLq2FzWaKBP+F5Yg+4m3dT+/ZKGXJrpZ/wv5e14qvEUmfvwDe/qQZ4eH6XAScnZMSzWNPO/Mc1wYklZCAgLM85e+DrNLzy7ieuBuQQi/8nLuFu4CXi4fEv8zWTvOm0AXIAAAAASUVORK5CYII=" InformativeScreenshot="66229dc2b861a30f947c0b3b8f038750.png" Selector="&lt;wnd app='msrdc.exe' cls='RAIL_WINDOW' title='2024 UltraTax CS  (f9f3bb5e-86d1-4674-bc37-ad9f4637dbdd)' /&gt;" Title="2024 UltraTax CS  (f9f3bb5e-86d1-4674-bc37-ad9f4637dbdd)" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
   </Sequence>
 </Activity>
