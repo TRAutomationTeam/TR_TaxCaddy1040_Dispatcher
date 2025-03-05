@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1484,1487</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1408.8,1585.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TakeScreenshot_2</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -112,13 +112,13 @@
       <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="548.8,1290.4" Id="TakeScreenshot_2" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
-  <Sequence sap2010:Annotation.AnnotationText="Usage: Set in_Folder to the folder Name where you want to save the screenshot. Alternatively, supply the full path including filename in io_FilePath. Description: This workflow captures a screenshot and logs it's name and location. It then saves it. If io_FilePath is empty, it will try to save the picture in in_Folder.  It uses .png extension." sap:VirtualizedContainerService.HintSize="592,1422" sap2010:WorkflowViewState.IdRef="Sequence_34">
+  <Sequence sap2010:Annotation.AnnotationText="Usage: Set in_Folder to the folder Name where you want to save the screenshot. Alternatively, supply the full path including filename in io_FilePath. Description: This workflow captures a screenshot and logs it's name and location. It then saves it. If io_FilePath is empty, it will try to save the picture in in_Folder.  It uses .png extension." sap:VirtualizedContainerService.HintSize="592,1520.8" sap2010:WorkflowViewState.IdRef="Sequence_34">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Screenshot process" sap:VirtualizedContainerService.HintSize="530,1311" sap2010:WorkflowViewState.IdRef="Sequence_35">
+    <Sequence DisplayName="Screenshot process" sap:VirtualizedContainerService.HintSize="529.6,1432" sap2010:WorkflowViewState.IdRef="Sequence_35">
       <Sequence.Variables>
         <Variable x:TypeArguments="ui:Image" Name="screenshot" />
         <Variable x:TypeArguments="si:FileInfo" Name="screenshotFileInfo" />
@@ -128,7 +128,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take screenshot" sap:VirtualizedContainerService.HintSize="468,87" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[screenshot]">
+      <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take screenshot" sap:VirtualizedContainerService.HintSize="467.2,118.4" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[screenshot]">
         <ui:TakeScreenshot.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="8f2da0c3-a83e-413f-a320-96e6780c9cd4" WaitForReady="INTERACTIVE">
             <ui:Target.TimeoutMS>
@@ -137,9 +137,9 @@
           </ui:Target>
         </ui:TakeScreenshot.Target>
       </ui:TakeScreenshot>
-      <If Condition="[String.IsNullOrEmpty(io_filePath)]" DisplayName="If no file path" sap:VirtualizedContainerService.HintSize="468,264" sap2010:WorkflowViewState.IdRef="If_13">
+      <If Condition="[String.IsNullOrEmpty(io_filePath)]" DisplayName="If no file path" sap:VirtualizedContainerService.HintSize="467.2,378.4" sap2010:WorkflowViewState.IdRef="If_13">
         <If.Then>
-          <Assign DisplayName="Make file path" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_13">
+          <Assign DisplayName="Make file path" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_13">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[io_FilePath]</OutArgument>
             </Assign.To>
@@ -149,10 +149,16 @@
           </Assign>
         </If.Then>
         <If.Else>
-          <Sequence DisplayName="" sap2010:WorkflowViewState.IdRef="Sequence_36" />
+          <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
         </If.Else>
       </If>
-      <Assign DisplayName="Create fileInfo with Path" sap:VirtualizedContainerService.HintSize="468,82" sap2010:WorkflowViewState.IdRef="Assign_14">
+      <Assign DisplayName="Create fileInfo with Path" sap:VirtualizedContainerService.HintSize="467.2,112.8" sap2010:WorkflowViewState.IdRef="Assign_14">
         <Assign.To>
           <OutArgument x:TypeArguments="si:FileInfo">[screenshotFileInfo]</OutArgument>
         </Assign.To>
@@ -160,9 +166,9 @@
           <InArgument x:TypeArguments="si:FileInfo">[new fileinfo(io_FilePath)]</InArgument>
         </Assign.Value>
       </Assign>
-      <If Condition="[Directory.Exists(screenshotFileInfo.DirectoryName)]" DisplayName="If directory does not exist, create it" sap:VirtualizedContainerService.HintSize="468,342" sap2010:WorkflowViewState.IdRef="If_14">
+      <If Condition="[Directory.Exists(screenshotFileInfo.DirectoryName)]" DisplayName="If directory does not exist, create it" sap:VirtualizedContainerService.HintSize="467.2,378.4" sap2010:WorkflowViewState.IdRef="If_14">
         <If.Then>
-          <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_37">
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -171,11 +177,11 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create directory" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_6" Path="[screenshotFileInfo.DirectoryName]" />
+          <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create directory" sap:VirtualizedContainerService.HintSize="333.6,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_6" Path="[screenshotFileInfo.DirectoryName]" />
         </If.Else>
       </If>
-      <ui:SaveImage DisplayName="Save screenshot" FileName="[io_FilePath]" sap:VirtualizedContainerService.HintSize="468,133" sap2010:WorkflowViewState.IdRef="SaveImage_6" Image="[screenshot]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Exception Screenshot Path - &quot;+io_FilePath]" />
+      <ui:SaveImage DisplayName="Save screenshot" FileName="[io_FilePath]" sap:VirtualizedContainerService.HintSize="467.2,166.4" sap2010:WorkflowViewState.IdRef="SaveImage_6" Image="[screenshot]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="467.2,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Exception Screenshot Path - &quot;+io_FilePath]" />
     </Sequence>
   </Sequence>
 </Activity>

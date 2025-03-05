@@ -539,21 +539,21 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="579.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Writing the client Id into the Tax Caddy File&quot;]" />
-                                        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="579.2,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_9" ProcessName="Excel" />
-                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="579.2,1116.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_28" ShowExcelWindow="False">
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="660.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Writing the client Id into the Tax Caddy File&quot;]" />
+                                        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="660.8,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_9" ProcessName="Excel" />
+                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="660.8,1756" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_28" ShowExcelWindow="False">
                                           <ueab:ExcelProcessScopeX.Body>
                                             <ActivityAction x:TypeArguments="ui:IExcelProcess">
                                               <ActivityAction.Argument>
                                                 <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                                               </ActivityAction.Argument>
-                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Writing the client Id into the Tax Caddy File" sap:VirtualizedContainerService.HintSize="545.6,1030.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_28" ResizeWindow="None" WorkbookPath="[in_MainConfig(&quot;InFile_TaxCaddy&quot;).ToString]">
+                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Writing the client Id into the Tax Caddy File" sap:VirtualizedContainerService.HintSize="627.2,1646.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_28" ResizeWindow="None" WorkbookPath="[in_MainConfig(&quot;InFile_TaxCaddy&quot;).ToString]">
                                                 <ueab:ExcelApplicationCard.Body>
                                                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                                     <ActivityAction.Argument>
                                                       <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                                                     </ActivityAction.Argument>
-                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,760.8" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="593.6,1376.8" sap2010:WorkflowViewState.IdRef="Sequence_81">
                                                       <Sequence.Variables>
                                                         <Variable x:TypeArguments="x:Int32" Name="outCellValue" />
                                                       </Sequence.Variables>
@@ -563,16 +563,16 @@
                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <ueab:MatchFunctionX DisplayName="Match function" sap:VirtualizedContainerService.HintSize="449.6,236.8" sap2010:WorkflowViewState.IdRef="MatchFunctionX_28" InRange="[Excel.Sheet(in_MainConfig(&quot;InSheet_TaxCaddy&quot;).ToString).Range(&quot;A:A&quot;)]" MatchFunctionType="ExactlyEqual" SaveTo="[outCellValue]" ValueToMatch="[in_TransactionID]" />
-                                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                                                      <ueab:MatchFunctionX DisplayName="Match function" sap:VirtualizedContainerService.HintSize="531.2,268.8" sap2010:WorkflowViewState.IdRef="MatchFunctionX_28" InRange="[Excel.Sheet(in_MainConfig(&quot;InSheet_TaxCaddy&quot;).ToString).Range(&quot;A:A&quot;)]" MatchFunctionType="ExactlyEqual" SaveTo="[outCellValue]" ValueToMatch="[in_TransactionID]" />
+                                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="531.2,382.4" sap2010:WorkflowViewState.IdRef="CommentOut_5">
                                                         <ui:CommentOut.Body>
-                                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,270" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,272" sap2010:WorkflowViewState.IdRef="Sequence_82">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <ueab:WriteCellX Cell="[Excel.Sheet(in_MainConfig(&quot;InSheet_TaxCaddy&quot;).ToString).Cell(UiPath.Excel.Helpers.ExcelUtilities.ConvertColumnIndexToColumnLetter(dt_SWHeader.Columns.IndexOf(&quot;TaxFileName&quot;) + 1)+outCellValue.ToString)]" DisplayName="Write TaxFileName" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_86" Value="[in_TransactionItem(&quot;TaxFileName&quot;)]" />
+                                                            <ueab:WriteCellX Cell="[Excel.Sheet(in_MainConfig(&quot;InSheet_TaxCaddy&quot;).ToString).Cell(UiPath.Excel.Helpers.ExcelUtilities.ConvertColumnIndexToColumnLetter(dt_SWHeader.Columns.IndexOf(&quot;TaxFileName&quot;) + 1)+outCellValue.ToString)]" DisplayName="Write TaxFileName" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteCellX_86" Value="[in_TransactionItem(&quot;TaxFileName&quot;)]" />
                                                           </Sequence>
                                                         </ui:CommentOut.Body>
                                                         <sap:WorkflowViewStateService.ViewState>
@@ -582,7 +582,7 @@
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
                                                       </ui:CommentOut>
-                                                      <Sequence DisplayName="Find Cell Address" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_268">
+                                                      <Sequence DisplayName="Find Cell Address" sap:VirtualizedContainerService.HintSize="531.2,453.6" sap2010:WorkflowViewState.IdRef="Sequence_268">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -625,7 +625,7 @@
                                                           </Assign.Value>
                                                         </Assign>
                                                       </Sequence>
-                                                      <ueab:WriteCellX Cell="[Excel.Sheet(in_MainConfig(&quot;InSheet_TaxCaddy&quot;).ToString).Cell(str_Addstr+outCellValue.ToString)]" DisplayName="Write Status Client Creation" sap:VirtualizedContainerService.HintSize="450,159" sap2010:WorkflowViewState.IdRef="WriteCellX_198" Value="[&quot;Client Creation - Failed&quot;]" />
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(in_MainConfig(&quot;InSheet_TaxCaddy&quot;).ToString).Cell(str_Addstr+outCellValue.ToString)]" DisplayName="Write Status Client Creation" sap:VirtualizedContainerService.HintSize="531.2,183.2" sap2010:WorkflowViewState.IdRef="WriteCellX_198" Value="[&quot;Client Creation - Failed&quot;]" />
                                                     </Sequence>
                                                   </ActivityAction>
                                                 </ueab:ExcelApplicationCard.Body>
@@ -4167,40 +4167,40 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                     <av:PointCollection x:Key="ConnectorLocation">3385.2,1634.4 3385.2,1664.4 4135.2,1664.4 4135.2,1814</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <If Condition="[str_ProcessStatus=&quot;Successful&quot;]" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="If_6">
+                                <If Condition="[str_ProcessStatus=&quot;Successful&quot;]" sap:VirtualizedContainerService.HintSize="784,2554.4" sap2010:WorkflowViewState.IdRef="If_6">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="492.8,662.4" sap2010:WorkflowViewState.IdRef="Sequence_114">
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="750.4,2311.2" sap2010:WorkflowViewState.IdRef="Sequence_114">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Sequence DisplayName="Sequence-Writing the client id to an excel sheet" sap:VirtualizedContainerService.HintSize="688,2640.8" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                                      <Sequence DisplayName="Sequence-Writing the client id to an excel sheet" sap:VirtualizedContainerService.HintSize="688,2028.8" sap2010:WorkflowViewState.IdRef="Sequence_119">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="625.6,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_13" ProcessName="Excel" />
-                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="625.6,2354.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_37" ShowExcelWindow="False">
+                                        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="625.6,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_13" ProcessName="Excel" />
+                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="625.6,1741.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_37" ShowExcelWindow="False">
                                           <ueab:ExcelProcessScopeX.Body>
                                             <ActivityAction x:TypeArguments="ui:IExcelProcess">
                                               <ActivityAction.Argument>
                                                 <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                                               </ActivityAction.Argument>
-                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File (h)" sap:VirtualizedContainerService.HintSize="592,2228" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_38" ResizeWindow="None" WorkbookPath="[in_MainConfig(&quot;InFile_TaxSoftware&quot;).ToString]">
+                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File (h)" sap:VirtualizedContainerService.HintSize="592,1632" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_38" ResizeWindow="None" WorkbookPath="[in_MainConfig(&quot;InFile_TaxSoftware&quot;).ToString]">
                                                 <ueab:ExcelApplicationCard.Body>
                                                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                                     <ActivityAction.Argument>
                                                       <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                                                     </ActivityAction.Argument>
-                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558.4,1958.4" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558.4,1362.4" sap2010:WorkflowViewState.IdRef="Sequence_118">
                                                       <Sequence.Variables>
                                                         <Variable x:TypeArguments="x:Int32" Name="outCellValue" />
                                                       </Sequence.Variables>
@@ -4209,7 +4209,7 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <ueab:MatchFunctionX DisplayName="Match function" sap:VirtualizedContainerService.HintSize="496,236.8" sap2010:WorkflowViewState.IdRef="MatchFunctionX_38" InRange="[Excel.Sheet(in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString).Range(&quot;A:A&quot;)]" MatchFunctionType="ExactlyEqual" SaveTo="[outCellValue]" ValueToMatch="[Cint(in_TransactionItem(&quot;SNo Client Creation&quot;).ToString)]">
+                                                      <ueab:MatchFunctionX DisplayName="Match function" sap:VirtualizedContainerService.HintSize="496,268.8" sap2010:WorkflowViewState.IdRef="MatchFunctionX_38" InRange="[Excel.Sheet(in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString).Range(&quot;A:A&quot;)]" MatchFunctionType="ExactlyEqual" SaveTo="[outCellValue]" ValueToMatch="[Cint(in_TransactionItem(&quot;SNo Client Creation&quot;).ToString)]">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4217,14 +4217,14 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
                                                       </ueab:MatchFunctionX>
-                                                      <Sequence DisplayName="Find Cell Address" sap:VirtualizedContainerService.HintSize="496,564.8" sap2010:WorkflowViewState.IdRef="Sequence_193">
+                                                      <Sequence DisplayName="Find Cell Address" sap:VirtualizedContainerService.HintSize="496,56.8" sap2010:WorkflowViewState.IdRef="Sequence_193">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_57">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_57">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:String">[str_FindRage]</OutArgument>
                                                           </Assign.To>
@@ -4234,7 +4234,7 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                                             </InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_58">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_58">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:String">[str_Addstr]</OutArgument>
                                                           </Assign.To>
@@ -4244,14 +4244,14 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                                             </InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <ui:ExcelLookUpRange Range="{x:Null}" DisplayName="Lookup Range" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="ExcelLookUpRange_7" Result="[str_FindRage]" SheetName="[in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString]" Value="ID Created">
+                                                        <ui:ExcelLookUpRange Range="{x:Null}" DisplayName="Lookup Range" sap:VirtualizedContainerService.HintSize="433.6,120" sap2010:WorkflowViewState.IdRef="ExcelLookUpRange_7" Result="[str_FindRage]" SheetName="[in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString]" Value="ID Created">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </ui:ExcelLookUpRange>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_59">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_59">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:String">[str_Addstr]</OutArgument>
                                                           </Assign.To>
@@ -4260,7 +4260,7 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                                           </Assign.Value>
                                                         </Assign>
                                                       </Sequence>
-                                                      <ueab:WriteCellX Cell="[Excel.Sheet(in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString).Cell(str_Addstr +outCellValue.ToString)]" DisplayName="Write Cell client id" sap:VirtualizedContainerService.HintSize="496,160" sap2010:WorkflowViewState.IdRef="WriteCellX_108" Value="[ClientID]">
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString).Cell(str_Addstr +outCellValue.ToString)]" DisplayName="Write Cell client id" sap:VirtualizedContainerService.HintSize="496,192" sap2010:WorkflowViewState.IdRef="WriteCellX_108" Value="[ClientID]">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4268,14 +4268,14 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
                                                       </ueab:WriteCellX>
-                                                      <Sequence DisplayName="Find Cell Address" sap:VirtualizedContainerService.HintSize="496,564.8" sap2010:WorkflowViewState.IdRef="Sequence_194">
+                                                      <Sequence DisplayName="Find Cell Address" sap:VirtualizedContainerService.HintSize="496,572.8" sap2010:WorkflowViewState.IdRef="Sequence_194">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_60">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_60">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:String">[str_FindRage]</OutArgument>
                                                           </Assign.To>
@@ -4285,7 +4285,7 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                                             </InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_61">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_61">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:String">[str_Addstr]</OutArgument>
                                                           </Assign.To>
@@ -4295,14 +4295,14 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                                             </InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <ui:ExcelLookUpRange Range="{x:Null}" DisplayName="Lookup Range" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="ExcelLookUpRange_8" Result="[str_FindRage]" SheetName="[in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString]" Value="Date And Time">
+                                                        <ui:ExcelLookUpRange Range="{x:Null}" DisplayName="Lookup Range" sap:VirtualizedContainerService.HintSize="433.6,120" sap2010:WorkflowViewState.IdRef="ExcelLookUpRange_8" Result="[str_FindRage]" SheetName="[in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString]" Value="Date And Time">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </ui:ExcelLookUpRange>
-                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_62">
+                                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_62">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:String">[str_Addstr]</OutArgument>
                                                           </Assign.To>
@@ -4311,7 +4311,7 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                                           </Assign.Value>
                                                         </Assign>
                                                       </Sequence>
-                                                      <ueab:WriteCellX Cell="[Excel.Sheet(in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString).Cell(str_Addstr+outCellValue.ToString)]" DisplayName="Write Cell date" sap:VirtualizedContainerService.HintSize="496,160" sap2010:WorkflowViewState.IdRef="WriteCellX_109" Value="[now.tostring(&quot;dd-MM-yyyy hh:mm:ss&quot;)]">
+                                                      <ueab:WriteCellX Cell="[Excel.Sheet(in_MainConfig(&quot;ClientCreationSheet_GoSystem&quot;).ToString).Cell(str_Addstr+outCellValue.ToString)]" DisplayName="Write Cell date" sap:VirtualizedContainerService.HintSize="496,183.2" sap2010:WorkflowViewState.IdRef="WriteCellX_109" Value="[now.tostring(&quot;dd-MM-yyyy hh:mm:ss&quot;)]">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -4355,7 +4355,7 @@ Select t=Tuple.Create(name, dr_FilteredQRow(i))).ToDictionary(Function (x) x.Ite
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_117">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1408.8,2311.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1408.8,2308.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -42,6 +42,7 @@
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -93,6 +94,8 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap2010:WorkflowViewState.ViewStateManager>
@@ -250,7 +253,7 @@
       <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="694,1662" Id="ProcessTransaction_1" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
-  <TryCatch sap2010:Annotation.AnnotationText="##Business Process Layer##&#xA;Description: In this file all other process specific files will be invoked. If an application exception occurs, the current transaction can be retried. If a BRE is thrown, the transaction will be skipped. Can be a flowchart or sequence. " DisplayName="wbProcess" sap:VirtualizedContainerService.HintSize="699.2,2246.4" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+  <TryCatch sap2010:Annotation.AnnotationText="##Business Process Layer##&#xA;Description: In this file all other process specific files will be invoked. If an application exception occurs, the current transaction can be retried. If a BRE is thrown, the transaction will be skipped. Can be a flowchart or sequence. " DisplayName="wbProcess" sap:VirtualizedContainerService.HintSize="699.2,2244" sap2010:WorkflowViewState.IdRef="TryCatch_4">
     <TryCatch.Variables>
       <Variable x:TypeArguments="x:String" Name="wbPath" />
       <Variable x:TypeArguments="x:String" Name="wbName" />
@@ -262,7 +265,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <TryCatch.Try>
-      <Sequence DisplayName="Try processing wbProcess" sap:VirtualizedContainerService.HintSize="662.4,2015.2" sap2010:WorkflowViewState.IdRef="Sequence_47">
+      <Sequence DisplayName="Try processing wbProcess" sap:VirtualizedContainerService.HintSize="662.4,2202.4" sap2010:WorkflowViewState.IdRef="Sequence_47">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -316,6 +319,7 @@
           </ui:AddLogFields>
           <ui:LogMessage DisplayName="Log execution started message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[wbPath + &quot; execution started.&quot;]" />
         </Sequence>
+        <ui:CopyFile ContinueOnError="{x:Null}" Destination="[in_Config(&quot;TestSummary_ReportPath&quot;).ToString+&quot;SagarTest&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="600,187.2" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[in_Config(&quot;TestSummary_TemplatePath&quot;).ToString]" />
         <Flowchart sap2010:Annotation.AnnotationText="#Write business code here#" DisplayName="Process" sap:VirtualizedContainerService.HintSize="600,656.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -324,6 +328,7 @@
               <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
               <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">294.8,52.1 294.8,82.1 255.2,82.1 255.2,134</av:PointCollection>
+              <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Flowchart.StartNode>

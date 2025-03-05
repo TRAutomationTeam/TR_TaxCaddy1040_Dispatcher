@@ -164,6 +164,7 @@
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Transaction" />
       <Variable x:TypeArguments="x:String" Name="argument1" />
       <Variable x:TypeArguments="x:String" Name="out_TaxYear" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, sd:DataTable)" Name="dictTestSummaryReport" />
     </TryCatch.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -438,7 +439,7 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <Transition.Condition>[TransactionItem IsNot Nothing and SystemError Is Nothing]</Transition.Condition>
                 <Transition.To>
-                  <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="##Framework Layer##&#xA;Interact with applications opened in Init state using data obtained in the Data Layer. A transaction that fails with a BusinessRuleException will not be retried. All others exceptions will be." DisplayName="Process Transaction State" sap:VirtualizedContainerService.HintSize="156,61.6" sap2010:WorkflowViewState.IdRef="State_6">
+                  <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="##Framework Layer##&#xA;Interact with applications opened in Init state using data obtained in the Data Layer. A transaction that fails with a BusinessRuleException will not be retried. All others exceptions will be." DisplayName="Process Transaction State" sap:VirtualizedContainerService.HintSize="593.6,1260" sap2010:WorkflowViewState.IdRef="State_6">
                     <State.Entry>
                       <TryCatch sap2010:Annotation.AnnotationText="ProcessTransaction state guard" DisplayName="ProcessTransaction" sap:VirtualizedContainerService.HintSize="548.8,816.8" sap2010:WorkflowViewState.IdRef="TryCatch_40">
                         <TryCatch.Try>
@@ -738,7 +739,7 @@
                         <Transition.To>
                           <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="##Framework Layer##&#xA;Read Config. Initialize all applications. Recover the environment from System Error by Closing and Initializing all applications." DisplayName="Init State" sap:VirtualizedContainerService.HintSize="140,61.6" sap2010:WorkflowViewState.IdRef="State_8">
                             <State.Entry>
-                              <TryCatch sap2010:Annotation.AnnotationText="Initialization state guard" DisplayName="Init" sap:VirtualizedContainerService.HintSize="787.2,4079.2" sap2010:WorkflowViewState.IdRef="TryCatch_33">
+                              <TryCatch sap2010:Annotation.AnnotationText="Initialization state guard" DisplayName="Init" sap:VirtualizedContainerService.HintSize="787.2,3380" sap2010:WorkflowViewState.IdRef="TryCatch_33">
                                 <TryCatch.Variables>
                                   <Variable x:TypeArguments="sd:DataTable" Name="dt_TempData" />
                                 </TryCatch.Variables>
@@ -748,20 +749,20 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <TryCatch.Try>
-                                  <Sequence DisplayName="Try processing Init" sap:VirtualizedContainerService.HintSize="750.4,3328.8" sap2010:WorkflowViewState.IdRef="Sequence_346">
+                                  <Sequence DisplayName="Try processing Init" sap:VirtualizedContainerService.HintSize="750.4,2629.6" sap2010:WorkflowViewState.IdRef="Sequence_346">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Sequence sap2010:Annotation.AnnotationText="This section is needed for the correct operation of the framework. Edits here break things." DisplayName="System - Reserved" sap:VirtualizedContainerService.HintSize="688,3240" sap2010:WorkflowViewState.IdRef="Sequence_343">
+                                    <Sequence sap2010:Annotation.AnnotationText="This section is needed for the correct operation of the framework. Edits here break things." DisplayName="System - Reserved" sap:VirtualizedContainerService.HintSize="688,2540.8" sap2010:WorkflowViewState.IdRef="Sequence_343">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <If Condition="[Config is Nothing]" DisplayName="If first run - read Config file" sap:VirtualizedContainerService.HintSize="625.6,1799.2" sap2010:WorkflowViewState.IdRef="If_73">
+                                      <If Condition="[Config is Nothing]" DisplayName="If first run - read Config file" sap:VirtualizedContainerService.HintSize="625.6,1798.4" sap2010:WorkflowViewState.IdRef="If_73">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -769,7 +770,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <If.Then>
-                                          <Sequence DisplayName="First Run" sap:VirtualizedContainerService.HintSize="592,1524" sap2010:WorkflowViewState.IdRef="Sequence_341">
+                                          <Sequence DisplayName="First Run" sap:VirtualizedContainerService.HintSize="592,1523.2" sap2010:WorkflowViewState.IdRef="Sequence_341">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -814,7 +815,7 @@
                                                 </scg:List>
                                               </ui:MultipleAssign.AssignOperations>
                                             </ui:MultipleAssign>
-                                            <Sequence sap2010:Annotation.AnnotationText="Save job arguments with values to Config, using the argument's name as keyname. " DisplayName="Save job arguments Config" sap:VirtualizedContainerService.HintSize="529.6,522.4" sap2010:WorkflowViewState.IdRef="Sequence_415">
+                                            <Sequence sap2010:Annotation.AnnotationText="Save job arguments with values to Config, using the argument's name as keyname. " DisplayName="Save job arguments Config" sap:VirtualizedContainerService.HintSize="529.6,521.6" sap2010:WorkflowViewState.IdRef="Sequence_415">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -822,7 +823,7 @@
                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <If Condition="[Not string.IsNullOrEmpty(OrchestratorQueueName)]" DisplayName="OrchestratorQueueName" sap:VirtualizedContainerService.HintSize="467.2,401.6" sap2010:WorkflowViewState.IdRef="If_100">
+                                              <If Condition="[Not string.IsNullOrEmpty(OrchestratorQueueName)]" DisplayName="OrchestratorQueueName" sap:VirtualizedContainerService.HintSize="467.2,400.8" sap2010:WorkflowViewState.IdRef="If_100">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -830,7 +831,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                                 <If.Then>
-                                                  <Assign DisplayName="Add OrchestratorQueueName" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_227">
+                                                  <Assign DisplayName="Add OrchestratorQueueName" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_227">
                                                     <Assign.To>
                                                       <OutArgument x:TypeArguments="x:Object">[Config("OrchestratorQueueName")]</OutArgument>
                                                     </Assign.To>
@@ -867,7 +868,7 @@
                                           </Sequence>
                                         </If.Else>
                                       </If>
-                                      <Assign sap:VirtualizedContainerService.HintSize="625.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_244">
+                                      <Assign sap:VirtualizedContainerService.HintSize="625.6,112.8" sap2010:WorkflowViewState.IdRef="Assign_244">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[SystemReserved]</OutArgument>
                                         </Assign.To>
@@ -875,6 +876,12 @@
                                           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[New system.Collections.Generic.Dictionary(Of String, Object) From { {"isQueueItem", False}, {"TransactionNumber", 1}, {"RetryNumber", 0}, {"InitRetryNumber", 0}, {"ContinuousRetryNumber", 0}, {"RobotFail", ""} }]</InArgument>
                                         </Assign.Value>
                                       </Assign>
+                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke - TestSummary_ReadTemplate" sap:VirtualizedContainerService.HintSize="625.6,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_150" UnSafe="False" WorkflowFileName="ServicesLayer\BinderCreation_TaxCaddy\Reporting\TestSummary_ReadTemplate.xaml">
+                                        <ui:InvokeWorkflowFile.Arguments>
+                                          <OutArgument x:TypeArguments="scg:Dictionary(x:String, sd:DataTable)" x:Key="outDictTestSummaryReport">[dictTestSummaryReport]</OutArgument>
+                                          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+                                        </ui:InvokeWorkflowFile.Arguments>
+                                      </ui:InvokeWorkflowFile>
                                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessLayer\Dispatcher.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="625.6,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_149" UnSafe="False" WorkflowFileName="ProcessLayer\Dispatcher.xaml">
                                         <ui:InvokeWorkflowFile.Arguments>
                                           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
@@ -900,11 +907,11 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:CommentOut>
-                                      <Sequence DisplayName="Reset Env in case of SystemError" sap:VirtualizedContainerService.HintSize="625.6,952" sap2010:WorkflowViewState.IdRef="Sequence_342">
+                                      <Sequence DisplayName="Reset Env in case of SystemError" sap:VirtualizedContainerService.HintSize="625.6,48" sap2010:WorkflowViewState.IdRef="Sequence_342">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <If Condition="[SystemError isNot Nothing]" DisplayName="If System Error Reset Env" sap:VirtualizedContainerService.HintSize="449.6,736" sap2010:WorkflowViewState.IdRef="If_75">
